@@ -1,0 +1,50 @@
+{
+  "batch_id": "browser-067",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F05br2%2C%2Fm%2F04hzj%2C%2Fm%2F027jk%2C%2Fm%2F0167v%2C%2Fm%2F05qkp&hl=en-US",
+  "retrieved_at": "2026-10-17T20:35:24.714070+00:00",
+  "topic_columns": {
+    "Nauru: (Worldwide)": {
+      "iso3": "NRU",
+      "topic_id": "/m/05br2",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Oceania",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Oceania. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Liberia: (Worldwide)": {
+      "iso3": "LBR",
+      "topic_id": "/m/04hzj",
+      "verified_country_topic": true,
+      "google_label_type": "Country in West Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in West Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Djibouti: (Worldwide)": {
+      "iso3": "DJI",
+      "topic_id": "/m/027jk",
+      "verified_country_topic": true,
+      "google_label_type": "Country in East Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in East Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Brunei: (Worldwide)": {
+      "iso3": "BRN",
+      "topic_id": "/m/0167v",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Asia",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Asia. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Papua New Guinea: (Worldwide)": {
+      "iso3": "PNG",
+      "topic_id": "/m/05qkp",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Oceania",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Oceania. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  },
+  "repeat_verification_note": "Repeated the recorded topic-ID query in the normal browser; checked Worldwide, source dates and Web Search on the rendered page. Import verifies exact CSV column bindings. Retrieval timestamp is the completed browser-download file timestamp."
+}

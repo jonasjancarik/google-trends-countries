@@ -42,6 +42,9 @@ export function CountryCard({ country, monthly, ranks, rankedCount, compared, on
             </dd>
             <dt>Versus prediction</dt>
             <dd>{country.vsExpected === null ? <span className="muted">Not in the model</span> : fmtTimes(country.vsExpected)}</dd>
+            {country.vsExpected !== null && country.modelYear !== null && (
+              <><dt>Model population and GDP year</dt><dd>{country.modelYear}</dd></>
+            )}
             <dt>Population</dt>
             <dd>
               {fmtPeople(country.population)}
@@ -68,8 +71,8 @@ export function CountryCard({ country, monthly, ranks, rankedCount, compared, on
         </>
       ) : (
         <p className="card-empty">
-          Searches for {country.country} were too infrequent to measure reliably over the full year, so it has no score
-          or rank. Its population is {fmtPeople(country.population)}.
+          The exported scores for {country.country} did not meet the study&apos;s precision or completeness rules,
+          so it has no published score or rank. Its population is {fmtPeople(country.population)}.
         </p>
       )}
       {country.populationSource && country.populationSource !== "World Bank" && (

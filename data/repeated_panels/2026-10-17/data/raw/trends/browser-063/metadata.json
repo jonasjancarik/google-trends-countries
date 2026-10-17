@@ -1,0 +1,50 @@
+{
+  "batch_id": "browser-063",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F02wt0%2C%2Fm%2F088xp%2C%2Fm%2F06srk%2C%2Fm%2F0fv4v%2C%2Fm%2F0h3y&hl=en-US",
+  "retrieved_at": "2026-10-17T20:34:28.652811+00:00",
+  "topic_columns": {
+    "Fiji: (Worldwide)": {
+      "iso3": "FJI",
+      "topic_id": "/m/02wt0",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Oceania",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Oceania. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Democratic Republic of the Congo: (Worldwide)": {
+      "iso3": "COD",
+      "topic_id": "/m/088xp",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Central Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Central Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Senegal: (Worldwide)": {
+      "iso3": "SEN",
+      "topic_id": "/m/06srk",
+      "verified_country_topic": true,
+      "google_label_type": "Country in West Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in West Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "C\u00f4te d'Ivoire: (Worldwide)": {
+      "iso3": "CIV",
+      "topic_id": "/m/0fv4v",
+      "verified_country_topic": true,
+      "google_label_type": "Country in West Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in West Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Algeria: (Worldwide)": {
+      "iso3": "DZA",
+      "topic_id": "/m/0h3y",
+      "verified_country_topic": true,
+      "google_label_type": "Country in North Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in North Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  },
+  "repeat_verification_note": "Repeated the recorded topic-ID query in the normal browser; checked Worldwide, source dates and Web Search on the rendered page. Import verifies exact CSV column bindings. Retrieval timestamp is the completed browser-download file timestamp."
+}

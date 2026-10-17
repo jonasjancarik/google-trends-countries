@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T20:24:02.072609+00:00",
+  "generated_at": "2026-10-17T20:32:04.440064+00:00",
   "as_of": "2026-10-16",
   "window_start": "2025-10-01",
   "window_end": "2026-09-30",
@@ -10,10 +10,12 @@
   "google_export_count": 76,
   "ranking_status_counts": {
     "Eligible": 194,
-    "Low search-volume precision; ranking withheld": 3
+    "Insufficient exported-score precision; ranking withheld": 3
   },
   "study_calendar_timezone": "Europe/Prague",
-  "google_export_timezone": "Not specified in the date-only CSV; no sub-day conversion inferred",
+  "google_export_timezone": "UTC (Google Explore documentation for periods of 30 days or longer)",
+  "google_export_timezone_source": "https://support.google.com/trends/answer/4365533?hl=en",
+  "legacy_manifest_timezone": "Europe/Prague records the study calendar; original import manifests are preserved unchanged",
   "un_members": 193,
   "population_available": 197,
   "world_bank_population_available": 195,
@@ -307,7 +309,8 @@
     "Annual country attention is an equal-month mean of relative search shares, not an annual count.",
     "Weekly observations are day-weighted approximations when split across calendar months.",
     "UN members and four additional entities are distinguished in all exports.",
-    "GDP and population years are retained; regression requires same-year inputs within two years of the economic reference.",
+    "Regression selects the latest common positive population/GDP year within two years of the economic reference, separately from per-capita denominators.",
+    "Sensitivity scenarios and conditional rounding envelopes do not estimate sampling uncertainty or change primary eligibility.",
     "Missing, censored and low-precision observations are never zero-filled for rankings."
   ]
 }

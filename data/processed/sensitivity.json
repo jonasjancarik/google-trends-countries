@@ -1,0 +1,60 @@
+{
+  "status": "available",
+  "cohort": "Primary eligible entities, including additional entities",
+  "eligible_countries": 194,
+  "adjacent_pairs_within_one_percent": 60,
+  "scenarios": [
+    {
+      "name": "median_high_precision_measurements",
+      "status": "available",
+      "countries": 194,
+      "changed_ranks": 11,
+      "max_absolute_rank_shift": 2.0
+    },
+    {
+      "name": "equal_weight_calibration_links",
+      "status": "available",
+      "countries": 194,
+      "changed_ranks": 24,
+      "max_absolute_rank_shift": 2.0
+    },
+    {
+      "name": "omit_COM_from_calibration_links",
+      "status": "available",
+      "countries": 194,
+      "changed_ranks": 0,
+      "max_absolute_rank_shift": 0.0
+    },
+    {
+      "name": "omit_CZE_from_calibration_links",
+      "status": "unavailable",
+      "reason": "Uncalibrated batches: ['browser-007', 'browser-008', 'browser-024', 'browser-026', 'browser-030', 'browser-031', 'browser-032', 'browser-034', 'browser-035', 'browser-036', 'browser-037', 'browser-039', 'browser-040', 'browser-043', 'browser-044', 'browser-045', 'browser-050', 'browser-051', 'browser-075']"
+    },
+    {
+      "name": "omit_FJI_from_calibration_links",
+      "status": "unavailable",
+      "reason": "Uncalibrated batches: ['browser-047', 'browser-056', 'browser-057', 'browser-059', 'browser-061', 'browser-074']"
+    },
+    {
+      "name": "omit_FRA_from_calibration_links",
+      "status": "unavailable",
+      "reason": "Uncalibrated batches: ['browser-001-france-czechia-paraguay-iraq-senegal', 'browser-002', 'browser-003', 'browser-004', 'browser-005', 'browser-006', 'browser-007', 'browser-008', 'browser-009', 'browser-010', 'browser-011', 'browser-012', 'browser-013', 'browser-014', 'browser-015', 'browser-016', 'browser-017', 'browser-018', 'browser-019', 'browser-020', 'browser-021', 'browser-022', 'browser-023', 'browser-024', 'browser-025', 'browser-026', 'browser-027', 'browser-028', 'browser-029', 'browser-030', 'browser-031', 'browser-032', 'browser-033', 'browser-034', 'browser-035', 'browser-036', 'browser-037', 'browser-038', 'browser-039', 'browser-040', 'browser-041', 'browser-042', 'browser-043', 'browser-044', 'browser-045', 'browser-046', 'browser-047', 'browser-048', 'browser-049', 'browser-050', 'browser-051', 'browser-052', 'browser-053', 'browser-054', 'browser-055', 'browser-056', 'browser-057', 'browser-058', 'browser-059', 'browser-060', 'browser-061', 'browser-062', 'browser-063', 'browser-064', 'browser-065', 'browser-066', 'browser-067', 'browser-068', 'browser-069', 'browser-070', 'browser-071', 'browser-072', 'browser-073', 'browser-074', 'browser-075']"
+    },
+    {
+      "name": "omit_HTI_from_calibration_links",
+      "status": "available",
+      "countries": 194,
+      "changed_ranks": 0,
+      "max_absolute_rank_shift": 0.0
+    },
+    {
+      "name": "omit_NRU_from_calibration_links",
+      "status": "unavailable",
+      "reason": "Uncalibrated batches: ['browser-065', 'browser-067', 'browser-068', 'browser-071', 'browser-072']"
+    }
+  ],
+  "sampling_uncertainty": "Not estimated: one collection panel; scenario ranges are not confidence intervals",
+  "rounding_scope": "Conditional on fitted scales, chosen observations, fixed populations and constant within-interval shares; excludes sampling, privacy noise and calibration error",
+  "eligibility_policy": "Unchanged: twelve complete months, no censored intervals and every selected score at least 5",
+  "annual_precision_policy": "Diagnostic only; no annual uncertainty threshold has been empirically validated"
+}

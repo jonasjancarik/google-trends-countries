@@ -1,0 +1,45 @@
+{
+  "batch_id": "browser-046",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F02wt0%2C%2Fm%2F0hg5%2C%2Fm%2F0l3h%2C%2Fm%2F027nb%2C%2Fm%2F03188&hl=en-US",
+  "retrieved_at": "2026-10-17T20:31:42.609113+00:00",
+  "topic_columns": {
+    "Fiji: (Worldwide)": {
+      "iso3": "FJI",
+      "topic_id": "/m/02wt0",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Oceania. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Andorra: (Worldwide)": {
+      "iso3": "AND",
+      "topic_id": "/m/0hg5",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Antigua and Barbuda: (Worldwide)": {
+      "iso3": "ATG",
+      "topic_id": "/m/0l3h",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in the Caribbean. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Dominica: (Worldwide)": {
+      "iso3": "DMA",
+      "topic_id": "/m/027nb",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in the Caribbean. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Micronesia: (Worldwide)": {
+      "iso3": "FSM",
+      "topic_id": "/m/03188",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Oceania. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  },
+  "repeat_verification_note": "Repeated the recorded topic-ID query in the normal browser; checked Worldwide, source dates and Web Search on the rendered page. Import verifies exact CSV column bindings. Retrieval timestamp is the completed browser-download file timestamp."
+}

@@ -86,3 +86,15 @@ pnpm --dir web build
 Tests cover country resolution, scope, date windows, shared and chained calibration, censoring, day weights, per-capita metrics, regression scale invariance, foreign-count safeguards, audited CSV imports, pagination and offline failure. Synthetic test fixtures never enter the research outputs. Dependencies are locked in `uv.lock`; there is no Google scraping dependency or credential requirement for the supplied snapshot.
 
 The rankings are exploratory and apply only to eligible entities. Very small populations can produce large per-capita values. Publication requires repeated independent samples, alternative-anchor sensitivity and attention to excluded countries. In particular, the bottom 20 are not established as the least-searched countries among all 197 entities.
+
+
+## Methodology review and reproducible checks
+
+The model now chooses each country's latest common positive World Bank population/GDP year within 2023–2025, separately from the population denominator used for per-capita attention. This retains seven previously excluded countries and gives a 186-country model. Its R² is an in-sample fit for **log attention**. The country exports preserve `model_year`, `model_population`, `model_gdp_usd` and the exclusion reason so readers can audit the inputs.
+
+Every build also writes `ranking_sensitivity.csv` and `sensitivity.json`. These compare alternative duplicate-observation selection, link weighting and omission of widely reused reference topics, recording failures rather than treating disconnected graphs as stable. They include conditional annual rounding envelopes and the annual contribution of low-score intervals. Primary rankings and the every-selected-score-at-least-5 rule remain unchanged: rounding-only diagnostics cannot establish total measurement uncertainty.
+
+Use `uv run country-attention compare-panels --panel /path/to/repeat-root` to compare separately collected panels with fixed populations and a common eligible cohort. This rejects fully reused exports and reports partially reused hashes. Observed rank ranges are descriptive, not sampling confidence intervals. See [the methodology and rationale](docs/methodology.md) and [the repeated-panel protocol](docs/collection.md#repeated-panel-protocol) before collecting, interpreting or publishing these checks. The web page provides downloads of the diagnostics and full documentation.
+
+
+A complete 17 October repeat panel is supplied separately. Comparing it with the original 16 October panel gives 194 common eligible countries: 45 ranks move, by at most three places, and 19 of the top 20 remain in that group. Haiti passes the precision gate in the repeat but remains excluded from the unchanged primary snapshot. The [methodology](docs/methodology.md#repeat-collection-on-17-october-2026) explains why these are observed sensitivity results rather than sampling confidence intervals.

@@ -1,0 +1,45 @@
+{
+  "batch_id": "browser-035",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F01mjq%2C%2Fm%2F04hqz%2C%2Fm%2F04hzj%2C%2Fm%2F04gqr%2C%2Fm%2F04hvw&hl=en-US",
+  "retrieved_at": "2026-10-17T20:28:16.965004+00:00",
+  "topic_columns": {
+    "Czechia: (Worldwide)": {
+      "iso3": "CZE",
+      "topic_id": "/m/01mjq",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Lebanon: (Worldwide)": {
+      "iso3": "LBN",
+      "topic_id": "/m/04hqz",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in the Middle East. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Liberia: (Worldwide)": {
+      "iso3": "LBR",
+      "topic_id": "/m/04hzj",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in West Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Libya: (Worldwide)": {
+      "iso3": "LBY",
+      "topic_id": "/m/04gqr",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in North Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Lesotho: (Worldwide)": {
+      "iso3": "LSO",
+      "topic_id": "/m/04hvw",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Southern Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  },
+  "repeat_verification_note": "Repeated the recorded topic-ID query in the normal browser; checked Worldwide, source dates and Web Search on the rendered page. Import verifies exact CSV column bindings. Retrieval timestamp is the completed browser-download file timestamp."
+}

@@ -52,7 +52,9 @@ def calculate_metrics(
             result.loc[mask, "ranking_status"] = "Incomplete or censored search measurements"
             continue
         if group.low_resolution.any():
-            result.loc[mask, "ranking_status"] = "Low search-volume precision; ranking withheld"
+            result.loc[mask, "ranking_status"] = (
+                "Insufficient exported-score precision; ranking withheld"
+            )
             continue
         attention = group.relative_attention.mean()
         peak = group.relative_attention.max()
@@ -80,10 +82,29 @@ def calculate_metrics(
 def fit_attention_model(frame: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
     """OLS log(attention) ~ log(population) + log(GDP), with HC3 standard errors."""
     frame = frame.copy()
-    complete = frame[["relative_attention", "population", "gdp_usd"]].notna().all(axis=1)
-    complete &= (frame[["relative_attention", "population", "gdp_usd"]] > 0).all(axis=1)
-    complete &= frame.population_year.eq(frame.gdp_usd_year)
-    complete &= frame.population_year.ge(frame.reference_year - 2)
+    # Legacy callers may provide already matched observations. The pipeline always
+    # supplies the independently selected common-year columns.
+    separate = "model_year" in frame
+    pop = "model_population" if separate else "population"
+    gdp = "model_gdp_usd" if separate else "gdp_usd"
+    year = frame.model_year if separate else frame.population_year
+    complete = frame[["relative_attention", pop, gdp]].notna().all(axis=1)
+    complete &= (frame[["relative_attention", pop, gdp]] > 0).all(axis=1)
+    complete &= year.ge(frame.reference_year - 2) & year.le(frame.reference_year)
+    if not separate:
+        complete &= frame.population_year.eq(frame.gdp_usd_year)
+    frame["model_status"] = "No positive population/GDP pair in the permitted years"
+    frame.loc[frame.relative_attention.isna(), "model_status"] = "Search measurement not eligible"
+    frame.loc[complete, "model_status"] = "Eligible"
+    for field in [
+        "attention_residual",
+        "adjusted_ratio",
+        "adjusted_rank",
+        "model_log_fitted",
+        "model_leverage",
+        "model_cooks_distance",
+    ]:
+        frame[field] = np.nan
     valid = frame[complete.fillna(False)].copy()
     if len(valid) < 10:
         return frame, {
@@ -91,7 +112,7 @@ def fit_attention_model(frame: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
             "reason": "At least 10 countries with complete attention and same-year population/GDP are required",
             "n": len(valid),
         }
-    predictors = np.log(valid[["population", "gdp_usd"]].astype(float))
+    predictors = np.log(valid[[pop, gdp]].astype(float)).set_axis(["population", "gdp_usd"], axis=1)
     design = sm.add_constant(predictors)
     if np.linalg.matrix_rank(design) < 3:
         return frame, {
@@ -114,6 +135,12 @@ def fit_attention_model(frame: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
         "r_squared": float(fit.rsquared),
         "coefficients": params,
         "hc3_confidence_intervals_95": ci,
+        "hc3_standard_errors": {k: float(v) for k, v in fit.bse.items()},
+        "response_scale": "Natural logarithm of the annual relative attention index",
+        "economic_selection": "Latest common positive World Bank population/GDP year within reference year minus two through reference year",
+        "excluded": frame.loc[~complete, ["iso3", "model_status"]].to_dict("records")
+        if "iso3" in frame
+        else [],
         "condition_number": float(fit.condition_number),
         "note": "Exploratory association; interval estimates omit Google sampling/calibration uncertainty. Exp(fitted log attention) is a geometric prediction, not an arithmetic mean count.",
     }

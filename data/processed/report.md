@@ -83,13 +83,13 @@ Very small populations can produce large per-capita values. Regression-adjusted 
 | Guinea | 0.0981 |
 | Nigeria | 0.0982 |
 
-The population-and-GDP log model uses 179 countries (R² = 0.892). It requires recent GDP and population observations from the same year, so its sample is smaller than the per-capita ranking. Residuals measure attention relative to a geometric prediction; they do not explain its causes.
+The population-and-GDP log model uses 186 countries (in-sample R² for log attention = 0.887). It selects each country's latest common positive World Bank population/GDP year within the permitted three-year window, separately from per-capita denominators. The model_year, model_population and model_gdp_usd columns identify its inputs. Residuals measure attention relative to a geometric prediction; they do not explain its causes.
 
-The largest positive adjusted residuals, expressed as multiples of the fitted prediction, are Iran (3.88), Nepal (3.76), Tuvalu (3.19), Morocco (3.12), Maldives (2.86).
+The largest positive adjusted residuals, expressed as multiples of the fitted prediction, are Afghanistan (3.84), Iran (3.79), Nepal (3.62), Tuvalu (3.16), Morocco (3.06).
 
 The population/per-capita-attention Spearman correlation is -0.633. The population denominator can create an inverse association mechanically.
 
-Across the 179 countries with both rankings, per-capita and regression-adjusted ranks have Spearman correlation 0.321.
+Across the 186 countries with both rankings, per-capita and regression-adjusted ranks have Spearman correlation 0.325.
 
 Peak-month shares and ranks with each country's peak month removed are included for sensitivity analysis. A spike alone does not identify a news event.
 
@@ -122,3 +122,18 @@ Repeated independent exports and alternative reference paths are needed to asses
 stability before publication. The model's HC3 intervals omit Google sampling and calibration
 uncertainty. See `docs/methodology.md`, `docs/topic-audit.md` and `docs/research.md` for definitions,
 territorial qualifications and source links.
+
+## Calculation sensitivity
+
+60 adjacent pairs in the full eligible per-capita ranking differ by less than 1%. The scenario rank ranges in `ranking_sensitivity.csv` hold this cohort fixed. They are not sampling confidence intervals.
+
+- median_high_precision_measurements: 11 ranks changed; maximum movement 2 places.
+- equal_weight_calibration_links: 24 ranks changed; maximum movement 2 places.
+- omit_COM_from_calibration_links: 0 ranks changed; maximum movement 0 places.
+- omit_CZE_from_calibration_links: unavailable (Uncalibrated batches: ['browser-007', 'browser-008', 'browser-024', 'browser-026', 'browser-030', 'browser-031', 'browser-032', 'browser-034', 'browser-035', 'browser-036', 'browser-037', 'browser-039', 'browser-040', 'browser-043', 'browser-044', 'browser-045', 'browser-050', 'browser-051', 'browser-075']). This is a failed robustness check, not evidence of stability.
+- omit_FJI_from_calibration_links: unavailable (Uncalibrated batches: ['browser-047', 'browser-056', 'browser-057', 'browser-059', 'browser-061', 'browser-074']). This is a failed robustness check, not evidence of stability.
+- omit_FRA_from_calibration_links: unavailable (Uncalibrated batches: ['browser-001-france-czechia-paraguay-iraq-senegal', 'browser-002', 'browser-003', 'browser-004', 'browser-005', 'browser-006', 'browser-007', 'browser-008', 'browser-009', 'browser-010', 'browser-011', 'browser-012', 'browser-013', 'browser-014', 'browser-015', 'browser-016', 'browser-017', 'browser-018', 'browser-019', 'browser-020', 'browser-021', 'browser-022', 'browser-023', 'browser-024', 'browser-025', 'browser-026', 'browser-027', 'browser-028', 'browser-029', 'browser-030', 'browser-031', 'browser-032', 'browser-033', 'browser-034', 'browser-035', 'browser-036', 'browser-037', 'browser-038', 'browser-039', 'browser-040', 'browser-041', 'browser-042', 'browser-043', 'browser-044', 'browser-045', 'browser-046', 'browser-047', 'browser-048', 'browser-049', 'browser-050', 'browser-051', 'browser-052', 'browser-053', 'browser-054', 'browser-055', 'browser-056', 'browser-057', 'browser-058', 'browser-059', 'browser-060', 'browser-061', 'browser-062', 'browser-063', 'browser-064', 'browser-065', 'browser-066', 'browser-067', 'browser-068', 'browser-069', 'browser-070', 'browser-071', 'browser-072', 'browser-073', 'browser-074', 'browser-075']). This is a failed robustness check, not evidence of stability.
+- omit_HTI_from_calibration_links: 0 ranks changed; maximum movement 0 places.
+- omit_NRU_from_calibration_links: unavailable (Uncalibrated batches: ['browser-065', 'browser-067', 'browser-068', 'browser-071', 'browser-072']). This is a failed robustness check, not evidence of stability.
+
+Annual rounding envelopes hold fitted calibration scales and population fixed. Low-score annual contributions use the same equal-month weighting as the primary index. These diagnostics do not justify admitting excluded countries; sampling, privacy noise, classification and calibration error remain unquantified. See `docs/methodology.md` for the rationale and repeated-panel protocol.

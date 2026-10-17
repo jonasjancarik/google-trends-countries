@@ -1,26 +1,79 @@
 {
   "status": "available",
-  "n": 179,
-  "r_squared": 0.8923131665703448,
+  "n": 186,
+  "r_squared": 0.8873336395257279,
   "coefficients": {
-    "const": -15.16254143050874,
-    "population": -0.05473403741549317,
-    "gdp_usd": 0.7167863133476831
+    "const": -15.036208148570696,
+    "population": -0.03915232133399084,
+    "gdp_usd": 0.7022317142671344
   },
   "hc3_confidence_intervals_95": {
     "const": [
-      -16.068148105506346,
-      -14.256934755511136
+      -15.942551878142027,
+      -14.129864418999365
     ],
     "population": [
-      -0.11938931923312174,
-      0.009921244402135404
+      -0.10350436793130749,
+      0.025199725263325812
     ],
     "gdp_usd": [
-      0.6622792249693461,
-      0.77129340172602
+      0.6450227832021265,
+      0.7594406453321423
     ]
   },
-  "condition_number": 320.20442842276185,
+  "hc3_standard_errors": {
+    "const": 0.4624287674265724,
+    "population": 0.032833280154593344,
+    "gdp_usd": 0.02918876648564189
+  },
+  "response_scale": "Natural logarithm of the annual relative attention index",
+  "economic_selection": "Latest common positive World Bank population/GDP year within reference year minus two through reference year",
+  "excluded": [
+    {
+      "iso3": "CPV",
+      "model_status": "Search measurement not eligible"
+    },
+    {
+      "iso3": "COM",
+      "model_status": "Search measurement not eligible"
+    },
+    {
+      "iso3": "CUB",
+      "model_status": "No positive population/GDP pair in the permitted years"
+    },
+    {
+      "iso3": "ERI",
+      "model_status": "No positive population/GDP pair in the permitted years"
+    },
+    {
+      "iso3": "HTI",
+      "model_status": "Search measurement not eligible"
+    },
+    {
+      "iso3": "VAT",
+      "model_status": "No positive population/GDP pair in the permitted years"
+    },
+    {
+      "iso3": "PRK",
+      "model_status": "No positive population/GDP pair in the permitted years"
+    },
+    {
+      "iso3": "SSD",
+      "model_status": "No positive population/GDP pair in the permitted years"
+    },
+    {
+      "iso3": "SYR",
+      "model_status": "No positive population/GDP pair in the permitted years"
+    },
+    {
+      "iso3": "TWN",
+      "model_status": "No positive population/GDP pair in the permitted years"
+    },
+    {
+      "iso3": "YEM",
+      "model_status": "No positive population/GDP pair in the permitted years"
+    }
+  ],
+  "condition_number": 322.3475669752282,
   "note": "Exploratory association; interval estimates omit Google sampling/calibration uncertainty. Exp(fitted log attention) is a geometric prediction, not an arithmetic mean count."
 }

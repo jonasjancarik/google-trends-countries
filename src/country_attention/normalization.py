@@ -23,6 +23,7 @@ def calibrate_batches(
     min_overlap: int = 6,
     min_interest: float = 5,
     tolerance: float = 0.2,
+    exclude_link_topics: frozenset[str] = frozenset(),
 ) -> tuple[pd.DataFrame, dict]:
     required = {
         "batch_id",
@@ -82,7 +83,11 @@ def calibrate_batches(
             suffixes=("_a", "_b"),
             validate="one_to_one",
         )
-        usable = matched[matched.interest_a.ge(min_interest) & matched.interest_b.ge(min_interest)]
+        usable = matched[
+            matched.interest_a.ge(min_interest)
+            & matched.interest_b.ge(min_interest)
+            & ~matched.iso3_a.isin(exclude_link_topics)
+        ]
         if len(usable) < min_overlap:
             continue
         logs = np.log(usable.interest_a.to_numpy() / usable.interest_b.to_numpy())
@@ -97,6 +102,7 @@ def calibrate_batches(
                 "log_ratio": logratio,
                 "overlap": len(usable),
                 "p90_log_deviation": spread,
+                "topics": sorted(usable.iso3_a.unique().tolist()),
             }
         )
         neighbors[a].add(b)

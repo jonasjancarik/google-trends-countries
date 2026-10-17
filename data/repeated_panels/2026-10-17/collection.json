@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "comparison_count": 76,
+  "country_topics": 197,
+  "design": "Repeat the 76 recorded config/browser-batches queries with the same country-topic IDs and request settings",
+  "primary_panel_date": "2026-10-16",
+  "repeat_panel_date": "2026-10-17",
+  "acquisition": "Native Interest over time CSV downloads through the normal Google Trends browser interface",
+  "timestamps": "Completed browser download file timestamps, recorded individually in metadata and receipts",
+  "interpretation": "Exploratory repeat; not a preregistered study and not proof of independent Google sampling",
+  "comparison_command": "uv run country-attention compare-panels --panel data/repeated_panels/2026-10-17"
+}

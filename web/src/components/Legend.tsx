@@ -27,7 +27,7 @@ export function MapLegend({ metric }: { metric: MapMetric }) {
       </div>
       <div className="legend-nodata">
         <span className="legend-swatch is-hatch" />
-        {metric === "perMillion" ? "Too few searches to rank" : "Not in the model or too few searches"}
+        {metric === "perMillion" ? "Does not meet the precision rule" : "No eligible model estimate"}
       </div>
     </div>
   );

@@ -1,0 +1,50 @@
+{
+  "batch_id": "browser-066",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F05br2%2C%2Fm%2F04v6v%2C%2Fm%2F0hdx8%2C%2Fm%2F07f5x%2C%2Fm%2F01c4pv&hl=en-US",
+  "retrieved_at": "2026-10-17T20:35:18.248593+00:00",
+  "topic_columns": {
+    "Nauru: (Worldwide)": {
+      "iso3": "NRU",
+      "topic_id": "/m/05br2",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Oceania",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Oceania. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Marshall Islands: (Worldwide)": {
+      "iso3": "MHL",
+      "topic_id": "/m/04v6v",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Oceania",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Oceania. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "The Gambia: (Worldwide)": {
+      "iso3": "GMB",
+      "topic_id": "/m/0hdx8",
+      "verified_country_topic": true,
+      "google_label_type": "Country in West Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in West Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Togo: (Worldwide)": {
+      "iso3": "TGO",
+      "topic_id": "/m/07f5x",
+      "verified_country_topic": true,
+      "google_label_type": "Country in West Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in West Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Turkmenistan: (Worldwide)": {
+      "iso3": "TKM",
+      "topic_id": "/m/01c4pv",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Central Asia",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Central Asia. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  },
+  "repeat_verification_note": "Repeated the recorded topic-ID query in the normal browser; checked Worldwide, source dates and Web Search on the rendered page. Import verifies exact CSV column bindings. Retrieval timestamp is the completed browser-download file timestamp."
+}

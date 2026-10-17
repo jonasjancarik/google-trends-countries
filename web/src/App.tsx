@@ -142,9 +142,9 @@ export function App({ data }: { data: Snapshot }) {
               <dd className="stat-note">{fmtIndex(bottom[0].perMillion)} per million residents</dd>
             </div>
             <div>
-              <dt>Explained by population and GDP</dt>
+              <dt>Model fit on log search interest</dt>
               <dd className="stat-big">{Math.round(regression.r_squared * 100)}%</dd>
-              <dd className="stat-note">of the differences in total search interest, across {regression.n} countries</dd>
+              <dd className="stat-note">of variation on the logarithmic scale, within the {regression.n}-country sample; an association, not a cause</dd>
             </div>
             <div>
               <dt>Countries with a rank</dt>
@@ -152,7 +152,7 @@ export function App({ data }: { data: Snapshot }) {
                 {eligible.length} <span className="stat-of">of {countries.length}</span>
               </dd>
               <dd className="stat-note">
-                {unranked.length ? `${unranked.map((c) => c.country).join(", ")} had too few searches to measure` : "All measured"}
+                {unranked.length ? `${unranked.map((c) => c.country).join(", ")} did not meet the study's precision rule` : "All measured"}
               </dd>
             </div>
           </dl>
@@ -249,7 +249,7 @@ export function App({ data }: { data: Snapshot }) {
             </div>
           </div>
           <p className="footnote">
-            Index per million residents. Countries with too few searches to measure reliably are left out rather than
+            Index per million residents. Countries whose exported scores fail the precision rule are left out rather than
             placed at the bottom, so this is the bottom of the measured list, not necessarily of the world.
           </p>
         </section>
@@ -287,7 +287,7 @@ export function App({ data }: { data: Snapshot }) {
             <div>
               <h2>Searched for more, or less, than expected</h2>
               <p className="lede">
-                Knowing a country&apos;s population and GDP lets us predict how much search interest it should get. These
+                The fitted model estimates search interest from population and GDP. These
                 countries are furthest from that prediction. A value of 3× means three times the predicted interest. The
                 model can describe the gap, but not explain what causes it.
               </p>
@@ -324,8 +324,9 @@ export function App({ data }: { data: Snapshot }) {
             </div>
           </div>
           <p className="footnote">
-            The prediction uses {regression.n} countries with population and GDP from the same recent year. Countries
-            without recent GDP, including several microstates, Taiwan and the Holy See, are not part of it.
+            The prediction uses {regression.n} countries, each with population and GDP from its latest common recent year.
+            These model inputs can be older than the population used for the per-resident index. Countries without a
+            suitable pair, including Taiwan and the Holy See, are not part of the model.
           </p>
         </section>
 

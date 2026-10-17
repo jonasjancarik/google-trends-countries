@@ -37,7 +37,7 @@ If alpha API access is granted, its consistently scaled series may remove the ne
 
 Copy `config/batch-metadata.example.json` outside the raw data directory and edit it. Use a unique batch ID. Set `topic_columns` keys to the **exact** CSV headers. Each column must bind to its country ISO3 and reviewed `/m/...` or `/g/...` entity identifier, with `verified_country_topic: true` and a concrete `verification_note`. The template deliberately contains placeholders and an unverified flag, so it cannot silently become a real observation.
 
-Record the actual retrieval time, original comparison URL, source date window, returned resolution and common study-calendar interpretation (Europe/Prague here). Google's date-only CSV does not identify its source time zone. Keep browser/date settings consistent and do not infer sub-day timestamps. See docs/topic-audit.md. Then run:
+Record the actual retrieval time, original comparison URL, source date window, returned resolution and common study-calendar interpretation (Europe/Prague here). Google documents UTC for Explore periods of 30 days or longer. Keep the Europe/Prague study-calendar field separate from source UTC, as recorded in provenance; do not infer sub-day timestamps from date-only CSVs. See docs/topic-audit.md. Then run:
 
 ```bash
 uv run country-attention import-trends --csv /path/to/original.csv --metadata /path/to/reviewed-metadata.json
@@ -76,3 +76,26 @@ The latest precision retry is recorded in `data/raw/followup_checks/2026-10-16/r
 The supplied snapshot includes `data/raw/population_supplements/reviewed-populations.json` and the two original official HTML responses. The normal offline build loads this manifest, verifies each source-body checksum and fills only missing World Bank populations. No network request is made for supplements during a build. It fails if a reviewed record is outside the selected economic reference window; changing the reference year may therefore require a newly reviewed population source. The manifest is a curated source binding, not an automatic population scraper.
 
 Country exports retain source, exact observation date, definition and qualifications for each population. World Bank history remains in `economic_history.csv`; the two official records and receipts remain separately identified in provenance. See [the methodology](methodology.md#economic-denominators-and-model) for the Taiwan registration and Vatican City residency qualifications.
+
+
+## Repeated-panel protocol
+
+Read this before claiming sampling stability or replacing the weekly precision rule. Keep the original panel and economic vintage fixed. Record the full comparison design and intended repeat dates before collection; use the same 197 topic identities, 76 comparison settings, source window and weekly resolution for this snapshot. Collect on separate dates through the normal interface. Do not hammer the service, rotate identities or bypass rate limits. Stop on a confirmed rate-limit response; preserve incomplete collections and access failures without treating them as empty or stable results.
+
+Use a separate project-shaped directory, such as `data/repeated_panels/2026-10-17/`, containing `data/raw/trends/`. For each newly downloaded export, copy its corresponding metadata from `config/browser-batches/` into that panel's `config/browser-batches/`, keep the original source settings and reviewed topic IDs, and replace the retrieval timestamp with the actual new retrieval time. Review the visible entity labels and settings again. Import with the existing `import-trends` command using the repeat root. Never copy the original CSVs into a new panel and call them fresh observations.
+
+After collecting the complete universe, compare it with the primary snapshot:
+
+```bash
+uv run country-attention compare-panels --panel data/repeated_panels/2026-10-17
+# Add another --panel /path/to/another-repeat-root for each further panel.
+```
+
+This writes `data/processed/panel_comparison.csv` and `panel_comparison.json`. It independently recalibrates the imported panels and keeps the primary population denominators fixed. Exact duplicate panels are rejected; partially shared export hashes and retrieval date ranges are disclosed. Every panel must cover the same topic universe and settings. Incomplete panels or calibration failures stop the comparison without generating a false stability result. To avoid misreading older comparison outputs after a failed command, check its exit status and retain the output's panel dates; a failure does not replace a prior successful report.
+
+Compare ranks only among the common eligible countries, which the command reports explicitly. Review annual index ratios as well as rank changes and top/bottom membership. Observed minimum and maximum ranks are not confidence intervals, even when several collection dates are available. Do not merge repeats into the primary calibration graph or promote the most favourable export. Keep the current primary eligibility rule until a proposed annual criterion has been specified and validated independently of the countries it admits.
+
+The ordinary offline build also produces `ranking_sensitivity.csv` and `sensitivity.json`: alternative calculation choices, failed reference-omission checks and conditional annual rounding diagnostics. These require no new requests. The web build copies these files and the full methodology and collection guide into its downloadable data directory.
+
+
+The 17 October repeat is complete and supplied in `data/repeated_panels/2026-10-17/`. Running the comparison command above reproduces the delivered two-panel comparison. It does not replace the 16 October primary panel. The accompanying methodology records the observed changes and the limits of this exploratory repeat.

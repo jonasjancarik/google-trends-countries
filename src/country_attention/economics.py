@@ -122,3 +122,20 @@ def apply_population_supplements(
         ]:
             result.loc[mask, field] = record[field]
     return result, records
+
+
+def model_economics(history: pd.DataFrame, reference_year: int) -> pd.DataFrame:
+    """Latest common recent year, separate from the per-capita denominator vintage."""
+    eligible = history[
+        history.field.isin(["population", "gdp_usd"])
+        & history.year.between(reference_year - 2, reference_year)
+        & history.value.gt(0)
+    ]
+    if eligible.duplicated(["iso3", "year", "field"]).any():
+        raise ValueError("Duplicate economic observations for model selection")
+    paired = eligible.pivot(index=["iso3", "year"], columns="field", values="value")
+    paired = paired.reindex(columns=["population", "gdp_usd"]).dropna().reset_index()
+    paired = paired.sort_values("year").drop_duplicates("iso3", keep="last")
+    return paired.rename(
+        columns={"year": "model_year", "population": "model_population", "gdp_usd": "model_gdp_usd"}
+    ).rename_axis(columns=None)

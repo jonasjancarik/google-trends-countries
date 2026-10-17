@@ -9,9 +9,14 @@ import pandas as pd
 
 from country_attention.acquisition import CachedHTTP
 from country_attention.analysis import calculate_metrics, diagnostics, fit_attention_model
-from country_attention.economics import apply_population_supplements, collect_economics
+from country_attention.economics import (
+    apply_population_supplements,
+    collect_economics,
+    model_economics,
+)
 from country_attention.normalization import calibrate_batches, monthly_attention
 from country_attention.periods import StudyWindow
+from country_attention.sensitivity import sensitivity_report
 from country_attention.trends import load_batches
 
 MONTHLY_COLUMNS = [
@@ -61,6 +66,12 @@ def build(
         root / "data/raw/population_supplements/reviewed-populations.json",
         reference_year=reference_year,
     )
+    countries = countries.merge(
+        model_economics(economic_history, reference_year),
+        on="iso3",
+        how="left",
+        validate="one_to_one",
+    )
     raw = load_batches(root / "data/raw/trends")
     monthly = pd.DataFrame(columns=MONTHLY_COLUMNS)
     calibration = {"status": "unavailable", "reason": "No audited topic exports have been imported"}
@@ -71,6 +82,12 @@ def build(
     rankings = calculate_metrics(countries, monthly, window)
     rankings, model = fit_attention_model(rankings)
     analysis = diagnostics(rankings)
+    sensitivity = {"status": "unavailable", "reason": "No audited search panel"}
+    sensitivity_rows = pd.DataFrame(columns=["iso3"])
+    if not raw.empty:
+        sensitivity_rows, sensitivity = sensitivity_report(
+            raw, calibrated, calibration, countries, rankings, window, anchor_iso3
+        )
     out = root / "data/processed"
     out.mkdir(parents=True, exist_ok=True)
     save_text(out / "countries.csv", countries.to_csv(index=False))
@@ -89,6 +106,8 @@ def build(
     save_json(out / "calibration.json", calibration)
     save_json(out / "regression.json", model)
     save_json(out / "diagnostics.json", analysis)
+    save_json(out / "sensitivity.json", sensitivity)
+    save_text(out / "ranking_sensitivity.csv", sensitivity_rows.to_csv(index=False))
     probes = root / "data/raw/access_checks.json"
     provenance = {
         "generated_at": datetime.now(UTC).isoformat(),
@@ -104,7 +123,9 @@ def build(
             str(k): int(v) for k, v in rankings.ranking_status.value_counts().items()
         },
         "study_calendar_timezone": "Europe/Prague",
-        "google_export_timezone": "Not specified in the date-only CSV; no sub-day conversion inferred",
+        "google_export_timezone": "UTC (Google Explore documentation for periods of 30 days or longer)",
+        "google_export_timezone_source": "https://support.google.com/trends/answer/4365533?hl=en",
+        "legacy_manifest_timezone": "Europe/Prague records the study calendar; original import manifests are preserved unchanged",
         "un_members": int(countries.core_un_member.sum()),
         "population_available": int(countries.population.notna().sum()),
         "world_bank_population_available": world_bank_population_available,
@@ -136,7 +157,8 @@ def build(
             "Annual country attention is an equal-month mean of relative search shares, not an annual count.",
             "Weekly observations are day-weighted approximations when split across calendar months.",
             "UN members and four additional entities are distinguished in all exports.",
-            "GDP and population years are retained; regression requires same-year inputs within two years of the economic reference.",
+            "Regression selects the latest common positive population/GDP year within two years of the economic reference, separately from per-capita denominators.",
+            "Sensitivity scenarios and conditional rounding envelopes do not estimate sampling uncertainty or change primary eligibility.",
             "Missing, censored and low-precision observations are never zero-filled for rankings.",
         ],
     }
@@ -144,7 +166,18 @@ def build(
         root / "config/study.json",
         {"as_of": as_of, "anchor_iso3": anchor_iso3, "reference_year": reference_year},
     )
-    save_text(out / "report.md", make_report(rankings, provenance, model, analysis))
+    report = make_report(rankings, provenance, model, analysis)
+    if sensitivity["status"] == "available":
+        report += "\n## Calculation sensitivity\n\n"
+        report += f"{sensitivity['adjacent_pairs_within_one_percent']} adjacent pairs in the full eligible per-capita ranking differ by less than 1%. "
+        report += "The scenario rank ranges in `ranking_sensitivity.csv` hold this cohort fixed. They are not sampling confidence intervals.\n\n"
+        for scenario in sensitivity["scenarios"]:
+            if scenario["status"] == "available":
+                report += f"- {scenario['name']}: {scenario['changed_ranks']} ranks changed; maximum movement {scenario['max_absolute_rank_shift']:g} places.\n"
+            else:
+                report += f"- {scenario['name']}: unavailable ({scenario['reason']}). This is a failed robustness check, not evidence of stability.\n"
+        report += "\nAnnual rounding envelopes hold fitted calibration scales and population fixed. Low-score annual contributions use the same equal-month weighting as the primary index. These diagnostics do not justify admitting excluded countries; sampling, privacy noise, classification and calibration error remain unquantified. See `docs/methodology.md` for the rationale and repeated-panel protocol.\n"
+    save_text(out / "report.md", report)
     # Written last, so its presence marks a completed snapshot.
     save_json(out / "provenance.json", provenance)
     return provenance
@@ -196,7 +229,7 @@ ranked records, and no missing value is interpreted as zero searches.
         text += f"This includes {int(eligible.core_un_member.sum())} UN members. "
         counts = p["ranking_status_counts"]
         text += (
-            f"Exclusions comprise {counts.get('Low search-volume precision; ranking withheld', 0)} "
+            f"Exclusions comprise {counts.get('Insufficient exported-score precision; ranking withheld', 0)} "
             f"low-precision series, {counts.get('Incomplete or censored search measurements', 0)} "
             f"incomplete or censored series, and {counts.get('Population unavailable', 0)} "
             "entities without population data.\n\n"
@@ -212,8 +245,8 @@ ranked records, and no missing value is interpreted as zero searches.
                 text += f"| {row.country} | {row.attention_per_million:.3g} |\n"
             text += "\n"
         if model["status"] == "available":
-            text += f"The population-and-GDP log model uses {model['n']} countries (R² = {model['r_squared']:.3f}). "
-            text += "It requires recent GDP and population observations from the same year, so its sample is smaller than the per-capita ranking. "
+            text += f"The population-and-GDP log model uses {model['n']} countries (in-sample R² for log attention = {model['r_squared']:.3f}). "
+            text += "It selects each country's latest common positive World Bank population/GDP year within the permitted three-year window, separately from per-capita denominators. The model_year, model_population and model_gdp_usd columns identify its inputs. "
             text += "Residuals measure attention relative to a geometric prediction; they do not explain its causes.\n\n"
             adjusted = rankings[rankings.adjusted_rank.notna()].sort_values("adjusted_rank").head(5)
             text += "The largest positive adjusted residuals, expressed as multiples of the fitted prediction, are "

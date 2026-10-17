@@ -13,6 +13,7 @@ export type Country = {
   populationSource: string;
   gdp: number | null;
   gdpYear: number | null;
+  modelYear: number | null;
   gdpPerCapita: number | null;
   attention: number | null;
   perMillion: number | null;
@@ -43,6 +44,7 @@ export type Provenance = {
   ranked_countries: number;
   google_export_count: number;
   country_topics_with_exports: number;
+  repeat_panel_comparison_available?: boolean;
 };
 
 export type Snapshot = {
@@ -95,6 +97,7 @@ export async function loadSnapshot(): Promise<Snapshot> {
       populationSource: row.population_source ?? "",
       gdp: num(row.gdp_usd),
       gdpYear: num(row.gdp_usd_year),
+      modelYear: num(row.model_year),
       gdpPerCapita: num(row.gdp_per_capita_usd),
       attention: num(row.relative_attention),
       perMillion: num(row.attention_per_million),

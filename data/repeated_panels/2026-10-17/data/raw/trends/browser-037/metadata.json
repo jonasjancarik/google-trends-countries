@@ -1,0 +1,45 @@
+{
+  "batch_id": "browser-037",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F01mjq%2C%2Fm%2F04ty8%2C%2Fm%2F0bjv6%2C%2Fm%2F04v3q%2C%2Fm%2F056vv&hl=en-US",
+  "retrieved_at": "2026-10-17T20:29:11.290272+00:00",
+  "topic_columns": {
+    "Czechia: (Worldwide)": {
+      "iso3": "CZE",
+      "topic_id": "/m/01mjq",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Maldives: (Worldwide)": {
+      "iso3": "MDV",
+      "topic_id": "/m/04ty8",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in South Asia. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "North Macedonia: (Worldwide)": {
+      "iso3": "MKD",
+      "topic_id": "/m/0bjv6",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Malta: (Worldwide)": {
+      "iso3": "MLT",
+      "topic_id": "/m/04v3q",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Montenegro: (Worldwide)": {
+      "iso3": "MNE",
+      "topic_id": "/m/056vv",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  },
+  "repeat_verification_note": "Repeated the recorded topic-ID query in the normal browser; checked Worldwide, source dates and Web Search on the rendered page. Import verifies exact CSV column bindings. Retrieval timestamp is the completed browser-download file timestamp."
+}

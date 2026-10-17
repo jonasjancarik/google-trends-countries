@@ -1,0 +1,45 @@
+{
+  "batch_id": "browser-001-france-czechia-paraguay-iraq-senegal",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01%202026-09-30&q=%2Fm%2F0f8l9c,%2Fm%2F01mjq,%2Fm%2F05v10,%2Fm%2F0d05q4,%2Fm%2F06srk&hl=en-US",
+  "retrieved_at": "2026-10-17T20:20:25.103726+00:00",
+  "topic_columns": {
+    "France: (Worldwide)": {
+      "iso3": "FRA",
+      "topic_id": "/m/0f8l9c",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity label reviewed: Country in Europe. Worldwide, fixed window, all categories, Web Search."
+    },
+    "Czechia: (Worldwide)": {
+      "iso3": "CZE",
+      "topic_id": "/m/01mjq",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity label reviewed: Country in Europe. Worldwide, fixed window, all categories, Web Search."
+    },
+    "Paraguay: (Worldwide)": {
+      "iso3": "PRY",
+      "topic_id": "/m/05v10",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity label reviewed: Country in South America. Worldwide, fixed window, all categories, Web Search."
+    },
+    "Iraq: (Worldwide)": {
+      "iso3": "IRQ",
+      "topic_id": "/m/0d05q4",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity label reviewed: Country in the Middle East. Worldwide, fixed window, all categories, Web Search."
+    },
+    "Senegal: (Worldwide)": {
+      "iso3": "SEN",
+      "topic_id": "/m/06srk",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity label reviewed: Country in West Africa. Worldwide, fixed window, all categories, Web Search."
+    }
+  },
+  "repeat_verification_note": "Repeated the recorded topic-ID query in the normal browser; checked Worldwide, source dates and Web Search on the rendered page. Import verifies exact CSV column bindings. Retrieval timestamp is the completed browser-download file timestamp."
+}

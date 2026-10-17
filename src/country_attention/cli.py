@@ -6,8 +6,9 @@ from pathlib import Path
 import pandas as pd
 
 from country_attention.countries import country_universe
+from country_attention.panels import compare_panels
 from country_attention.periods import StudyWindow
-from country_attention.pipeline import build
+from country_attention.pipeline import build, save_json, save_text
 from country_attention.trends import import_google_csv
 
 
@@ -29,6 +30,16 @@ def main():
         "--anchor", default="FRA", help="Audited reference topic ISO3, annual mean = 100"
     )
     run.add_argument("--reference-year", type=int)
+    compare = sub.add_parser(
+        "compare-panels", help="Compare separately collected panels using fixed populations"
+    )
+    compare.add_argument(
+        "--panel",
+        type=Path,
+        action="append",
+        required=True,
+        help="Repeat project root containing data/raw/trends; repeat for each panel",
+    )
     ingest = sub.add_parser("import-trends", help="Import an original CSV plus audited metadata")
     ingest.add_argument("--csv", type=Path, required=True)
     ingest.add_argument("--metadata", type=Path, required=True)
@@ -51,6 +62,13 @@ def main():
             )
             print(
                 f"Saved {result['universe_count']} countries; {result['ranked_countries']} eligible for attention rankings."
+            )
+        elif args.command == "compare-panels":
+            rows, report = compare_panels(args.root, args.panel)
+            save_text(args.root / "data/processed/panel_comparison.csv", rows.to_csv(index=False))
+            save_json(args.root / "data/processed/panel_comparison.json", report)
+            print(
+                f"Compared {len(report['panels'])} panels on {report['common_eligible_countries']} common eligible countries; these are observed ranges, not confidence intervals."
             )
         elif args.command == "import-trends":
             print(import_google_csv(args.csv, args.metadata, args.root / "data/raw/trends"))

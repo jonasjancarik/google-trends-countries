@@ -1,0 +1,8 @@
+{
+  "topic_identity_review": "complete for 197 entities",
+  "collection_status": "data/raw/browser_collection_status.json",
+  "completed_refinement_plan": "config/browser-refinement-plan.json",
+  "next_batch": null,
+  "pending_refinement_batches": [],
+  "note": "All country topics have exports. Latest paired retries are recorded in data/raw/followup_checks/2026-10-16/receipt.json; Cabo Verde, Comoros and Haiti remain below the unchanged score threshold. Official population supplements now cover Taiwan and Vatican City, with definitions recorded separately. Further weaker-reference comparisons are not pending."
+}

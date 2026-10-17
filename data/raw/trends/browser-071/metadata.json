@@ -1,0 +1,49 @@
+{
+  "batch_id": "browser-071",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F05br2%2C%2Fm%2F04tr1%2C%2Fm%2F04wlh%2C%2Fm%2F03676%2C%2Fm%2F05cc1&hl=en-US",
+  "retrieved_at": "2026-10-16T19:43:39.754331+00:00",
+  "topic_columns": {
+    "Nauru: (Worldwide)": {
+      "iso3": "NRU",
+      "topic_id": "/m/05br2",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Oceania",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Oceania. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Malawi: (Worldwide)": {
+      "iso3": "MWI",
+      "topic_id": "/m/04tr1",
+      "verified_country_topic": true,
+      "google_label_type": "Landlocked country",
+      "verification_note": "Browser entity and CSV header reviewed: Landlocked country. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Mozambique: (Worldwide)": {
+      "iso3": "MOZ",
+      "topic_id": "/m/04wlh",
+      "verified_country_topic": true,
+      "google_label_type": "Country in East Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in East Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Guinea: (Worldwide)": {
+      "iso3": "GIN",
+      "topic_id": "/m/03676",
+      "verified_country_topic": true,
+      "google_label_type": "Country in West Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in West Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Niger: (Worldwide)": {
+      "iso3": "NER",
+      "topic_id": "/m/05cc1",
+      "verified_country_topic": true,
+      "google_label_type": "Country in West Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in West Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

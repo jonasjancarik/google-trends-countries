@@ -1,0 +1,49 @@
+{
+  "batch_id": "browser-030",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F01mjq%2C%2Fm%2F027jk%2C%2Fg%2F121p5z1h%2C%2Fm%2F027rn%2C%2Fm%2F02khs&hl=en-US",
+  "retrieved_at": "2026-10-16T14:34:06.937983+00:00",
+  "topic_columns": {
+    "Czechia: (Worldwide)": {
+      "iso3": "CZE",
+      "topic_id": "/m/01mjq",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Europe",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Djibouti: (Worldwide)": {
+      "iso3": "DJI",
+      "topic_id": "/m/027jk",
+      "verified_country_topic": true,
+      "google_label_type": "Country in East Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in East Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Denmark: (Worldwide)": {
+      "iso3": "DNK",
+      "topic_id": "/g/121p5z1h",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Europe",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Dominican Republic: (Worldwide)": {
+      "iso3": "DOM",
+      "topic_id": "/m/027rn",
+      "verified_country_topic": true,
+      "google_label_type": "Country in the Caribbean",
+      "verification_note": "Browser entity and CSV header reviewed: Country in the Caribbean. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Eritrea: (Worldwide)": {
+      "iso3": "ERI",
+      "topic_id": "/m/02khs",
+      "verified_country_topic": true,
+      "google_label_type": "Country in East Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in East Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

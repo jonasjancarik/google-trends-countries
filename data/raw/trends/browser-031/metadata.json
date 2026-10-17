@@ -1,0 +1,44 @@
+{
+  "batch_id": "browser-031",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F01mjq%2C%2Fm%2F03548%2C%2Fm%2F0hdx8%2C%2Fm%2F036b_%2C%2Fm%2F02kcz&hl=en-US",
+  "retrieved_at": "2026-10-16T14:23:22.743502+00:00",
+  "topic_columns": {
+    "Czechia: (Worldwide)": {
+      "iso3": "CZE",
+      "topic_id": "/m/01mjq",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Gabon: (Worldwide)": {
+      "iso3": "GAB",
+      "topic_id": "/m/03548",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Central Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "The Gambia: (Worldwide)": {
+      "iso3": "GMB",
+      "topic_id": "/m/0hdx8",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in West Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Guinea-Bissau: (Worldwide)": {
+      "iso3": "GNB",
+      "topic_id": "/m/036b_",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in West Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Equatorial Guinea: (Worldwide)": {
+      "iso3": "GNQ",
+      "topic_id": "/m/02kcz",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Central Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "batch_id": "browser-055",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F02wt0%2C%2Fm%2F06nnj%2C%2Fm%2F02lx0%2C%2Fm%2F01rxw%2C%2Fm%2F05bmq&hl=en-US",
+  "retrieved_at": "2026-10-16T14:44:45.793232+00:00",
+  "topic_columns": {
+    "Fiji: (Worldwide)": {
+      "iso3": "FJI",
+      "topic_id": "/m/02wt0",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Oceania",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Oceania. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Suriname: (Worldwide)": {
+      "iso3": "SUR",
+      "topic_id": "/m/06nnj",
+      "verified_country_topic": true,
+      "google_label_type": "Country in South America",
+      "verification_note": "Browser entity and CSV header reviewed: Country in South America. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Timor-Leste: (Worldwide)": {
+      "iso3": "TLS",
+      "topic_id": "/m/02lx0",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Asia",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Asia. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Republic of the Congo: (Worldwide)": {
+      "iso3": "COG",
+      "topic_id": "/m/01rxw",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Central Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Central Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Namibia: (Worldwide)": {
+      "iso3": "NAM",
+      "topic_id": "/m/05bmq",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Southern Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Southern Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

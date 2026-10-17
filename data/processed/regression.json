@@ -1,0 +1,26 @@
+{
+  "status": "available",
+  "n": 179,
+  "r_squared": 0.8923131665703448,
+  "coefficients": {
+    "const": -15.16254143050874,
+    "population": -0.05473403741549317,
+    "gdp_usd": 0.7167863133476831
+  },
+  "hc3_confidence_intervals_95": {
+    "const": [
+      -16.068148105506346,
+      -14.256934755511136
+    ],
+    "population": [
+      -0.11938931923312174,
+      0.009921244402135404
+    ],
+    "gdp_usd": [
+      0.6622792249693461,
+      0.77129340172602
+    ]
+  },
+  "condition_number": 320.20442842276185,
+  "note": "Exploratory association; interval estimates omit Google sampling/calibration uncertainty. Exp(fitted log attention) is a geometric prediction, not an arithmetic mean count."
+}

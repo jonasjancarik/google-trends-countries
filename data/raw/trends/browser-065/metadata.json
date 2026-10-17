@@ -1,0 +1,49 @@
+{
+  "batch_id": "browser-065",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F05br2%2C%2Fm%2F01n8qg%2C%2Fm%2F06v36%2C%2Fm%2F06s_2%2C%2Fm%2F07z5n&hl=en-US",
+  "retrieved_at": "2026-10-16T19:42:27.488584+00:00",
+  "topic_columns": {
+    "Nauru: (Worldwide)": {
+      "iso3": "NRU",
+      "topic_id": "/m/05br2",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Oceania",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Oceania. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Solomon Islands: (Worldwide)": {
+      "iso3": "SLB",
+      "topic_id": "/m/01n8qg",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Oceania",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Oceania. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Eswatini: (Worldwide)": {
+      "iso3": "SWZ",
+      "topic_id": "/m/06v36",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Southern Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Southern Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Sierra Leone: (Worldwide)": {
+      "iso3": "SLE",
+      "topic_id": "/m/06s_2",
+      "verified_country_topic": true,
+      "google_label_type": "Country in West Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in West Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Vanuatu: (Worldwide)": {
+      "iso3": "VUT",
+      "topic_id": "/m/07z5n",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Oceania",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Oceania. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

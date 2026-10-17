@@ -1,0 +1,44 @@
+{
+  "batch_id": "browser-011",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F0f8l9c%2C%2Fm%2F01p1v%2C%2Fm%2F0fv4v%2C%2Fm%2F01nln%2C%2Fm%2F088xp&hl=en-US",
+  "retrieved_at": "2026-10-16T14:11:13.944508+00:00",
+  "topic_columns": {
+    "France: (Worldwide)": {
+      "iso3": "FRA",
+      "topic_id": "/m/0f8l9c",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Chile: (Worldwide)": {
+      "iso3": "CHL",
+      "topic_id": "/m/01p1v",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in South America. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "C\u00f4te d'Ivoire: (Worldwide)": {
+      "iso3": "CIV",
+      "topic_id": "/m/0fv4v",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in West Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Cameroon: (Worldwide)": {
+      "iso3": "CMR",
+      "topic_id": "/m/01nln",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Central Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Democratic Republic of the Congo: (Worldwide)": {
+      "iso3": "COD",
+      "topic_id": "/m/088xp",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Central Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

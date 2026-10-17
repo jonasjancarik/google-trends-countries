@@ -1,0 +1,37 @@
+[
+  {
+    "url": "https://api.worldbank.org/v2/country?format=json&per_page=20000&page=1",
+    "retrieved_at": "2026-10-16T10:27:42.179023+00:00",
+    "sha256": "a8c6a1ce8d08d1e7586f6a997267f7cb39403700d96d580d9535dc043cb43031",
+    "body_file": "a8c6a1ce8d08d1e7586f6a997267f7cb39403700d96d580d9535dc043cb43031.body.json",
+    "http_status": 200
+  },
+  {
+    "url": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json&per_page=20000&date=2020%3A2025&source=2&page=1",
+    "retrieved_at": "2026-10-16T10:27:42.509862+00:00",
+    "sha256": "cacb5039f5331e85bfed35be5c4594d3e43674fd57cbb0128f39f212e7f2644b",
+    "body_file": "cacb5039f5331e85bfed35be5c4594d3e43674fd57cbb0128f39f212e7f2644b.body.json",
+    "http_status": 200
+  },
+  {
+    "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?format=json&per_page=20000&date=2020%3A2025&source=2&page=1",
+    "retrieved_at": "2026-10-16T10:27:42.954270+00:00",
+    "sha256": "2f492bcedb011d470c017c94a683df945b130add7ecf5ddf105fa5d6df407944",
+    "body_file": "2f492bcedb011d470c017c94a683df945b130add7ecf5ddf105fa5d6df407944.body.json",
+    "http_status": 200
+  },
+  {
+    "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.CD?format=json&per_page=20000&date=2020%3A2025&source=2&page=1",
+    "retrieved_at": "2026-10-16T10:27:43.696873+00:00",
+    "sha256": "a7ad7e1d5d9ac2e4ed0516f9d3e51560caf771c466fb2d811cfb027091fe13be",
+    "body_file": "a7ad7e1d5d9ac2e4ed0516f9d3e51560caf771c466fb2d811cfb027091fe13be.body.json",
+    "http_status": 200
+  },
+  {
+    "url": "https://api.worldbank.org/v2/country/all/indicator/ST.INT.ARVL?format=json&per_page=20000&date=2020%3A2025&source=2&page=1",
+    "retrieved_at": "2026-10-16T10:27:44.302174+00:00",
+    "sha256": "04cc884ce14ceb2272d180a2489460f767aeb40e68079baa00896412b434a212",
+    "body_file": "04cc884ce14ceb2272d180a2489460f767aeb40e68079baa00896412b434a212.body.json",
+    "http_status": 200
+  }
+]

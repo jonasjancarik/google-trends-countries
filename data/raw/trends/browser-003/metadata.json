@@ -1,0 +1,44 @@
+{
+  "batch_id": "browser-003",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F01mjq%2C%2Fm%2F0d0kn%2C%2Fm%2F02wt0%2C%2Fm%2F03rj0%2C%2Fm%2F04w58&hl=en-US",
+  "retrieved_at": "2026-10-16T14:01:24.544113+00:00",
+  "topic_columns": {
+    "Czechia: (Worldwide)": {
+      "iso3": "CZE",
+      "topic_id": "/m/01mjq",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Georgia: (Worldwide)": {
+      "iso3": "GEO",
+      "topic_id": "/m/0d0kn",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Fiji: (Worldwide)": {
+      "iso3": "FJI",
+      "topic_id": "/m/02wt0",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Oceania. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Iceland: (Worldwide)": {
+      "iso3": "ISL",
+      "topic_id": "/m/03rj0",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Monaco: (Worldwide)": {
+      "iso3": "MCO",
+      "topic_id": "/m/04w58",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

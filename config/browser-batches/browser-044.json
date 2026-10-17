@@ -1,0 +1,44 @@
+{
+  "batch_id": "browser-044",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F01mjq%2C%2Fm%2F09lxtg%2C%2Fm%2F07fj_%2C%2Fm%2F07twz%2C%2Fm%2F07z5n&hl=en-US",
+  "retrieved_at": "2026-10-16T14:28:44.383598+00:00",
+  "topic_columns": {
+    "Czechia: (Worldwide)": {
+      "iso3": "CZE",
+      "topic_id": "/m/01mjq",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Trinidad and Tobago: (Worldwide)": {
+      "iso3": "TTO",
+      "topic_id": "/m/09lxtg",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in the Caribbean. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Tunisia: (Worldwide)": {
+      "iso3": "TUN",
+      "topic_id": "/m/07fj_",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in North Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Uruguay: (Worldwide)": {
+      "iso3": "URY",
+      "topic_id": "/m/07twz",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in South America. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Vanuatu: (Worldwide)": {
+      "iso3": "VUT",
+      "topic_id": "/m/07z5n",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Oceania. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

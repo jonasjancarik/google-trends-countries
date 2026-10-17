@@ -1,0 +1,36 @@
+[project]
+name = "country-attention"
+version = "0.1.0"
+description = "Auditable country-level Google search attention research"
+readme = "README.md"
+requires-python = ">=3.13,<3.15"
+dependencies = [
+  "httpx>=0.28,<1",
+  "numpy>=2.2,<3",
+  "pandas>=2.2,<4",
+  "pycountry>=24.6.1,<27",
+  "scipy>=1.15,<2",
+  "statsmodels>=0.14.4,<0.15",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.3,<10", "ruff>=0.11,<1"]
+
+[project.scripts]
+country-attention = "country_attention.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "B"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/country_attention"]

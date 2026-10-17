@@ -1,0 +1,44 @@
+{
+  "batch_id": "browser-005",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F0f8l9c%2C%2Fm%2F015fr%2C%2Fm%2F0chghy%2C%2Fm%2F0d060g%2C%2Fm%2F06bnz&hl=en-US",
+  "retrieved_at": "2026-10-16T14:05:51.890566+00:00",
+  "topic_columns": {
+    "France: (Worldwide)": {
+      "iso3": "FRA",
+      "topic_id": "/m/0f8l9c",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Brazil: (Worldwide)": {
+      "iso3": "BRA",
+      "topic_id": "/m/015fr",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in South America. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Australia: (Worldwide)": {
+      "iso3": "AUS",
+      "topic_id": "/m/0chghy",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Oceania. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Canada: (Worldwide)": {
+      "iso3": "CAN",
+      "topic_id": "/m/0d060g",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in North America. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Russia: (Worldwide)": {
+      "iso3": "RUS",
+      "topic_id": "/m/06bnz",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

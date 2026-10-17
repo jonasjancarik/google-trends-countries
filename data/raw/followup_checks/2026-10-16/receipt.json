@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-10-16T20:22:56.397109+00:00",
+  "comparisons": [
+    {
+      "iso3": "CPV",
+      "retrieved_at": "2026-10-16T20:22:56.397109+00:00",
+      "file": "data/raw/followup_checks/2026-10-16/cpv-retry.csv",
+      "sha256": "1de8ca244d83dcfe05f18b5c973883ae4f122bc0cf90e88b46dd7422fd2249cb",
+      "minimum_original_score": 1,
+      "maximum_original_score": 100,
+      "active_import": "browser-075",
+      "identical_to_existing_batch": null,
+      "outcome": "New paired export imported; precision remains insufficient."
+    },
+    {
+      "iso3": "HTI",
+      "retrieved_at": "2026-10-16T20:22:56.397109+00:00",
+      "file": "data/raw/followup_checks/2026-10-16/hti-retry.csv",
+      "sha256": "9531af21607dddf9dd05cf15b186fa40e1c037161a781404057d09a450ef950b",
+      "minimum_original_score": 4,
+      "maximum_original_score": 100,
+      "active_import": null,
+      "identical_to_existing_batch": "browser-073",
+      "outcome": "Still below the unchanged original-score minimum of 5. Identical repeats are not added as new calibration batches."
+    },
+    {
+      "iso3": "COM",
+      "retrieved_at": "2026-10-16T20:22:56.397109+00:00",
+      "file": "data/raw/followup_checks/2026-10-16/com-retry.csv",
+      "sha256": "e0344179434d1427df0e949742cc2733ef46d3f3a97b909552840668bea5a484",
+      "minimum_original_score": 4,
+      "maximum_original_score": 100,
+      "active_import": null,
+      "identical_to_existing_batch": "browser-074",
+      "outcome": "Still below the unchanged original-score minimum of 5. Identical repeats are not added as new calibration batches."
+    }
+  ],
+  "sampling_note": "Identical repeats may be cached and are not evidence of independent sample stability."
+}

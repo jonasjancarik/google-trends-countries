@@ -1,0 +1,197 @@
+
+
+
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <title>Latest News</title>
+    <meta content="no-cache" http-equiv="Cache-Control" />
+    <meta content="no-cache" http-equiv="Pragma" />
+    <meta content="0" http-equiv="Expires" />
+    <meta content="webapply" http-equiv="keywords" />
+
+    <meta name="DC.Title" content="Latest News" />
+    <meta name="DC.Creator" content="內政部戶政司" />
+    <meta name="DC.Publisher" content="內政部戶政司" />
+    <meta name="DC.Source" content="內政部戶政司" />
+    <meta name="DC.Type" content="text/html" />
+    <meta name="DC.Format" content="text/html" />
+    <meta name="DC.Language" content="繁體中文" />
+    <meta name="DC.Rights" content="內政部戶政司" />
+    <meta name="DC.Description" content="內政部戶政司全球資訊網" />
+    
+
+    <!-- secure information for MOICA validation rule -->
+    <meta name="app.secure" content="normal" />
+
+    <!-- default header name is X-CSRF-TOKEN -->
+    <meta name="_csrf" content="5e7416a9-fdaf-453f-b8dc-6d8c4e937ae8"/>
+    <meta name="_csrf_header" content="X-CSRF-TOKEN"/>
+
+    <!-- icon & css recources -->
+    
+
+
+
+
+ <!-- /3.5.1 -->
+<script type="text/javascript" src="/info-liferay/webjars/jquery/jquery.min.js"></script>
+
+
+
+<script type="text/javascript" src="/info-liferay/assets/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/info-liferay/webjars/bootstrap-icons/font/bootstrap-icons.min.css" /> <!-- /1.11.0 -->
+<link rel="stylesheet" type="text/css" href="/info-liferay/assets/bootstrap/css/bootstrap.min.css" />
+
+
+<script type="text/javascript" src="/info-liferay/assets/jquery-ui/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="/info-liferay/assets/jquery-ui/jquery-ui.min.css" type="text/css" />
+
+
+<script type="text/javascript" src="/info-liferay/webjars/github-com-macek-jquery-serialize-object/dist/jquery.serialize-object.min.js" defer></script> <!-- /2.5.0 -->
+
+<script type="text/javascript" src="/info-liferay/webjars/mobile-detect/mobile-detect.min.js"></script> <!-- /1.3.6 -->
+
+<script src="/info-liferay/plugins/promise-polyfill/polyfill.min.js" defer></script>
+
+<link rel="stylesheet" type="text/css" href="/info-liferay/plugins/sweetalert2/sweetalert2.min.css" />
+<script src="/info-liferay/plugins/sweetalert2/sweetalert2.all.min.js" defer></script>
+
+<link rel="stylesheet" type="text/css" href="/info-liferay/plugins/jquery-confirm/jquery-confirm.min.css" />
+<script src="/info-liferay/plugins/jquery-confirm/jquery-confirm.min.js" defer></script>
+
+
+<link rel="Shortcut Icon" href="/info-liferay/global/images/classic/favicon.ico" />
+<link rel="stylesheet" href="/info-liferay/global/css/webapply.css" type="text/css" />
+<link rel="stylesheet" href="/info-liferay/global/css/aw3.form.css" type="text/css" />
+<script type="text/javascript" src="/info-liferay/global/js/aw3.polyfill.js"></script>
+<script type="text/javascript" src="/info-liferay/global/js/awUtils.js"></script>
+<script type="text/javascript" src="/info-liferay/global/js/errorcode.js"></script>
+<script type="text/javascript" src="/info-liferay/global/js/validator.js"></script>
+<script type="text/javascript" src="/info-liferay/global/js/aw3-global.Utils.js"></script>
+<script type="text/javascript" src="/info-liferay/global/js/aw3.font.js"></script>
+
+
+<script src="/info-liferay/plugins/jsviews/jsviews.min.js" defer></script>
+
+
+
+<script type="text/javascript" src="/info-liferay/webjars/owasp-esapi-js/dist/esapi.js"></script>
+<script type="text/javascript" src="/info-liferay/webjars/owasp-esapi-js/dist/resources/i18n/ESAPI_Standard_en_US.properties.js"></script>
+<script type="text/javascript" src="/info-liferay/webjars/owasp-esapi-js/dist/resources/Base.esapi.properties.js"></script>
+<script type="text/javascript">
+$(function () {
+	org.owasp.esapi.ESAPI.initialize();
+});
+ </script>
+
+    <!-- javeScript recources -->
+    <link rel="stylesheet" href="/info-liferay/webjars/font-awesome/css/font-awesome.min.css" type="text/css" />
+<script>'use strict';(function(c,d){function b(){}d.host=window.location.protocol+"//"+window.location.hostname;d.setupLink=function(a){a=c(a);if(0==a.length)return!0;a.find("a").each(function(){var e=c(this),g=e.attr("href");if(!g||0<=g.indexOf("token")||e.hasClass("get-file"))return!0;e.attr("target","_blank")})};b.DATA={};b.PORTAL=d.portal?d.portal.getPortal():null;b.rtrim=function(a){return a?a.replace(/[\s\/]+$/g,""):""};b.stripkey=function(a){return a?a.slice(a.indexOf("\x3d")).replace(/^\D+/g,""):
+""};b.get=function(a){try{return a()}catch(e){}return""};d.channel=function(){};d.channel.init=function(a){if(!c.isPlainObject(a))throw Error("init data required");if(!c.isPlainObject(a.url))throw Error("init data url required");if(!a.url.main||!a.url.detail)throw Error("init data url format error");b.DATA={url:{main:b.rtrim(a.url.main),detail:b.rtrim(a.url.detail)},criteria:a.criteria};return d.channel};d.channel.setupmain=function(){var a=!!b.PORTAL,e=a?b.PORTAL.fn.getchannel():null,g=b.DATA.criteria?
+[a?"\x26":"?","p\x3d",b.DATA.criteria].join(""):"",k=b.DATA.url.detail,f="cs"+(new Date).getTime()%9;c("a.headline").each(function(){var l=c(this),h=l.attr("data-p")||"";if(a){h=[e,h,g].join("");var m=d.channel.openportal}else h=[k,"/",h,g].join(""),m=function(){};l.addClass(f).attr("href",h).removeAttr("data-p").on("click dblclick",m)})};d.channel.setupdetail=function(){c("a.get-file").click(function(f){f.preventDefault();f=c(f.target).attr("href");d.getfile(f)});var a="string"===c.type(b.DATA.criteria)?
+b.DATA.criteria:"",e=b.get(function(){return $ESAPI.encoder().cananicalize(a)}),g=/^\d+$/.test(e)?e:"1",k=b.DATA.url.main;c("#back").click(function(){c(this).attr("disabled","disabled");var f=[k,"/",g,"?view\x3dtop"].join("");window.location.replace(f)})};d.channel.openportal=function(a){a.preventDefault();a.stopPropagation();a=c(this).attr("href");if(a=b.stripkey(a))try{b.PORTAL.fn.channel.call(b.PORTAL,a)}catch(e){}}})(jQuery,window.aw=window.aw||{});</script>
+
+    <!-- javeScript -->
+    
+
+</head>
+
+<!-- style="margin: .8em; padding: .8em;" -->
+
+<body style="height: 100%">
+	<div class="container" style="padding: 6px; min-height: 300px;">
+		<div></div>
+		<div>
+
+
+
+
+<div id="messageTitle" style="text-align: center;">
+    
+    
+</div></div>
+		<div>
+
+
+
+</div>
+		<div>
+
+
+
+
+<link href="/info-liferay/resources/css/channels.css" rel="stylesheet" type="text/css" media="screen" />
+
+
+	
+<div class="">
+	<div class="article">
+		<div class="article-header">
+			<div class="subject text-left">
+				<h1 class="h2">Latest News</h1>
+				<div class="social-panel">
+					
+
+
+<div class="social-links"> <ul> <li><a class="share-fb focusable cs4b ws2" title="分享到 Facebook（在新視窗開啟）" href="https://www.facebook.com/sharer.php?u={0}" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></span><span class="sr-only">分享到 Facebook（在新視窗開啟）</span></a></li> <li><a class="share-line-link focusable cs4b ws2" title="分享到 LINE（在新視窗開啟）" href="https://lineit.line.me/share/ui?url={0}" target="_blank"><img class="img-responsive" src="/info-liferay/resources/images/line-icon.png" alt=""/><span class="sr-only">分享到 LINE（在新視窗開啟）</span></a></li> </ul> </div>
+<script type="text/javascript">'use strict';(function(e){var f=(window.location.pathname||"").split("/"),h=0<f.length?f[f.length-1]:null;e(function(){function n(a,b){return a.replace(/{(\d+)}/g,function(c,k){return"undefined"!=typeof b[k]?b[k]:c})}function g(a){return null!=a&&"undefined"!==typeof a}var d=window.top,l=null;if(!(f&&g(d.PORTAL)&&g(d.PORTAL.fn)&&g(d.PORTAL.fn.getchannel)&&g(l=d.PORTAL.fn.getchannel())))return e("div.social-links a").attr("href","javascript:void(0);").on("click",function(a){a.preventDefault()}),!0;
+var p="en"==(d.PORTAL.LANG||"").toLowerCase();d=aw.param.parse(l);var m={};e.each(d,function(a,b){m[a]=h});h=encodeURIComponent([l.split("?")[0],function(a){var b=new URLSearchParams;Object.keys(a).forEach(function(c,k){b.set(c,String(a[c]))});return b.toString()}(m)].join("?"));e("div.social-links a").each(function(){var a=e(this),b=a.attr("href");b&&a.attr("href",n(b,[h]));if(p){b=(a.attr("title")||"").replace(/[\W|\s]+/g,"").replace(/^\s+|\s+$/g,"");var c=!!b;b=["Share",c?" on ":" this message ",
+c?b:""," (in new window)"].join("");a.attr("title",b)}})})})(jQuery);</script>
+				</div>
+			</div>
+		</div>
+		<div class="title">
+			<div class="headline-wrapper">
+				<div class="headline">
+					<div class="headline-row">
+						<div class="headline-cell p-sm-left"><h2 class="fs13 m-sm-y">Household registration statistics data analysis in Dec 2025</h2></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="announcement">
+			<div><span class="badge badge-light fs-9 color-black fw-normal">Published Date: 2026-01-09</span></div>
+		</div>
+		<hr />
+		<div class="article-content line-height-20">
+			<div class="p-sm-bottom fs115">1. According to the household registration data, there were 9,851,532 households at the end of Dec 2025. Compared with the same month last year, there increased    364,052 households with an increase rate of 3.84%. <br/>2. By the end of Dec 2025, the total population was 23,299,132 with a decrease of 101,088 compared with the same month last year. <br/>3. By the end of Dec 2025, the male population was 11,462,401 and female population was 11,836,731. The sex ratio was 96.84 compared with male to female. <br/>4. There were 9,027 babies born in Dec 2025 which decreased 27.76% compared with the same month last year. The average showed that a baby was born about every 4.9 minutes. The annual crude birth rate was 4.56‰. <br/>5. There were 17,450 deaths in Dec 2025 which increased 0.03% compared with the same month last year. The average showed that there was about one death at every 2.6 minutes. The annual crude death rate was 8.82‰. <br/>6. The couples of marriage were 10,816 in Dec 2025. Including 10,456 couples of different gender and 360 couples of the same gender. The annual crude marriage rate was 5.47‰. <br/>7. The couples of divorce were 4,674 in Dec 2025. Including 4,576 couples of different gender and 98 couples of the same gender. The annual crude divorce rate was 2.36‰.<br/>8. There were 74,682 in-migrants in Dec 2025 which decreased 13.68% compared with the same month last year. In the same time there were 73,212 out-migrants which decreased 12.99% compared with the same month last year.<br/>9. At the end of Dec 2025, the indigenous people was 629,456 with an increase of 17,782 compared with the same month last year (2.70% of the total population). <br/>10. At the end of Dec 2025, the population aged 0 to 14 was 2,681,890 (11.51% of the total population). The population aged 15 to 64 was 15,944,087 (68.43%). The population aged over 65 was 4,673,155 (20.06%). In addition, the population aged over 20 was 19,644,140 (84.31%). <br/></div>
+			
+		</div>
+		
+		<hr/>
+		<div class="text-center">
+			<button type="button" id="back" class="btn btn-success">Back</button>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(function() {
+	aw.setupLink('.article');
+	aw.channel.init({url:{main:'/info-liferay/app/channel/newsEnglish',detail:'/info-liferay/app/channel/newsEnglishDetail'},criteria:''}).setupdetail();
+});
+</script>
+	
+	
+</div>
+		<div></div>
+	</div>
+	
+
+
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28221981-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-28221981-1');
+	</script>
+
+<script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1092248035" async></script></body>
+</html>

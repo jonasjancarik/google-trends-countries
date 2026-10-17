@@ -1,0 +1,1185 @@
+{
+  "PNG": {
+    "iso3": "PNG",
+    "name": "Papua New Guinea",
+    "topic_id": "/m/05qkp",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "UZB": {
+    "iso3": "UZB",
+    "name": "Uzbekistan",
+    "topic_id": "/m/07t_x",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "GNQ": {
+    "iso3": "GNQ",
+    "name": "Equatorial Guinea",
+    "topic_id": "/m/02kcz",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "BRA": {
+    "iso3": "BRA",
+    "name": "Brazil",
+    "topic_id": "/m/015fr",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "NLD": {
+    "iso3": "NLD",
+    "name": "Netherlands",
+    "topic_id": "/m/059j2",
+    "source": "Country candidate; exclude broader Kingdom_of_the_Netherlands /m/049nq"
+  },
+  "BRN": {
+    "iso3": "BRN",
+    "name": "Brunei",
+    "topic_id": "/m/0167v",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "BHR": {
+    "iso3": "BHR",
+    "name": "Bahrain",
+    "topic_id": "/m/0161c",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "PRT": {
+    "iso3": "PRT",
+    "name": "Portugal",
+    "topic_id": "/m/05r4w",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "NOR": {
+    "iso3": "NOR",
+    "name": "Norway",
+    "topic_id": "/m/05b4w",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "PER": {
+    "iso3": "PER",
+    "name": "Peru",
+    "topic_id": "/m/016wzw",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "IRL": {
+    "iso3": "IRL",
+    "name": "Republic of Ireland",
+    "topic_id": "/m/03rt9",
+    "source": "FB15k Republic_of_Ireland entity; reject island /m/012wgb"
+  },
+  "SUR": {
+    "iso3": "SUR",
+    "name": "Suriname",
+    "topic_id": "/m/06nnj",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "MCO": {
+    "iso3": "MCO",
+    "name": "Monaco",
+    "topic_id": "/m/04w58",
+    "source": "Verified Google Trends browser country entity"
+  },
+  "MDG": {
+    "iso3": "MDG",
+    "name": "Madagascar",
+    "topic_id": "/m/04sj3",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "MWI": {
+    "iso3": "MWI",
+    "name": "Malawi",
+    "topic_id": "/m/04tr1",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "NPL": {
+    "iso3": "NPL",
+    "name": "Nepal",
+    "topic_id": "/m/016zwt",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "IRQ": {
+    "iso3": "IRQ",
+    "name": "Iraq",
+    "topic_id": "/m/0d05q4",
+    "source": "Verified Google Trends browser country entity"
+  },
+  "CPV": {
+    "iso3": "CPV",
+    "name": "Cape Verde",
+    "topic_id": "/m/01nqj",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "CHE": {
+    "iso3": "CHE",
+    "name": "Switzerland",
+    "topic_id": "/m/06mzp",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "AZE": {
+    "iso3": "AZE",
+    "name": "Azerbaijan",
+    "topic_id": "/m/0jhd",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "JAM": {
+    "iso3": "JAM",
+    "name": "Jamaica",
+    "topic_id": "/m/03_r3",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "CHN": {
+    "iso3": "CHN",
+    "name": "China",
+    "topic_id": "/m/0d05w3",
+    "source": "Verified Google Trends browser country entity"
+  },
+  "MEX": {
+    "iso3": "MEX",
+    "name": "Mexico",
+    "topic_id": "/m/0b90_r",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "KEN": {
+    "iso3": "KEN",
+    "name": "Kenya",
+    "topic_id": "/m/019rg5",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "XKX": {
+    "iso3": "XKX",
+    "name": "Kosovo",
+    "topic_id": "/m/04fh3",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "KOR": {
+    "iso3": "KOR",
+    "name": "South Korea",
+    "topic_id": "/m/06qd3",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "NZL": {
+    "iso3": "NZL",
+    "name": "New Zealand",
+    "topic_id": "/m/0ctw_b",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "HUN": {
+    "iso3": "HUN",
+    "name": "Hungary",
+    "topic_id": "/m/03gj2",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "GIN": {
+    "iso3": "GIN",
+    "name": "Guinea",
+    "topic_id": "/m/03676",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "GHA": {
+    "iso3": "GHA",
+    "name": "Ghana",
+    "topic_id": "/m/035dk",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "SEN": {
+    "iso3": "SEN",
+    "name": "Senegal",
+    "topic_id": "/m/06srk",
+    "source": "Verified Google Trends browser country entity"
+  },
+  "TUR": {
+    "iso3": "TUR",
+    "name": "Turkey",
+    "topic_id": "/m/01znc_",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "CAN": {
+    "iso3": "CAN",
+    "name": "Canada",
+    "topic_id": "/m/0d060g",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "COL": {
+    "iso3": "COL",
+    "name": "Colombia",
+    "topic_id": "/m/01ls2",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "DJI": {
+    "iso3": "DJI",
+    "name": "Djibouti",
+    "topic_id": "/m/027jk",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "MLT": {
+    "iso3": "MLT",
+    "name": "Malta",
+    "topic_id": "/m/04v3q",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "BWA": {
+    "iso3": "BWA",
+    "name": "Botswana",
+    "topic_id": "/m/0166v",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "HRV": {
+    "iso3": "HRV",
+    "name": "Croatia",
+    "topic_id": "/m/01pj7",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "BGR": {
+    "iso3": "BGR",
+    "name": "Bulgaria",
+    "topic_id": "/m/015qh",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "GMB": {
+    "iso3": "GMB",
+    "name": "Gambia",
+    "topic_id": "/m/0hdx8",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "LKA": {
+    "iso3": "LKA",
+    "name": "Sri Lanka",
+    "topic_id": "/m/06m_5",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "NAM": {
+    "iso3": "NAM",
+    "name": "Namibia",
+    "topic_id": "/m/05bmq",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "DMA": {
+    "iso3": "DMA",
+    "name": "Dominica",
+    "topic_id": "/m/027nb",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "NRU": {
+    "iso3": "NRU",
+    "name": "Nauru",
+    "topic_id": "/m/05br2",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "MDV": {
+    "iso3": "MDV",
+    "name": "Maldives",
+    "topic_id": "/m/04ty8",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "ZAF": {
+    "iso3": "ZAF",
+    "name": "South Africa",
+    "topic_id": "/m/0hzlz",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "KNA": {
+    "iso3": "KNA",
+    "name": "Saint Kitts and Nevis",
+    "topic_id": "/m/06ryl",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "NGA": {
+    "iso3": "NGA",
+    "name": "Nigeria",
+    "topic_id": "/m/05cgv",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "FSM": {
+    "iso3": "FSM",
+    "name": "Federated States of Micronesia",
+    "topic_id": "/m/03188",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "ZWE": {
+    "iso3": "ZWE",
+    "name": "Zimbabwe",
+    "topic_id": "/m/088q4",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "LCA": {
+    "iso3": "LCA",
+    "name": "Saint Lucia",
+    "topic_id": "/m/06s0l",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "ERI": {
+    "iso3": "ERI",
+    "name": "Eritrea",
+    "topic_id": "/m/02khs",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "SVK": {
+    "iso3": "SVK",
+    "name": "Slovakia",
+    "topic_id": "/m/06npd",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "UKR": {
+    "iso3": "UKR",
+    "name": "Ukraine",
+    "topic_id": "/m/07t21",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "PHL": {
+    "iso3": "PHL",
+    "name": "Philippines",
+    "topic_id": "/m/05v8c",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "ISL": {
+    "iso3": "ISL",
+    "name": "Iceland",
+    "topic_id": "/m/03rj0",
+    "source": "Verified Google Trends browser country entity"
+  },
+  "ITA": {
+    "iso3": "ITA",
+    "name": "Italy",
+    "topic_id": "/m/03rjj",
+    "source": "Verified Google Trends browser country entity"
+  },
+  "ESP": {
+    "iso3": "ESP",
+    "name": "Spain",
+    "topic_id": "/m/06mkj",
+    "source": "Verified Google Trends browser country entity"
+  },
+  "VAT": {
+    "iso3": "VAT",
+    "name": "Vatican City",
+    "topic_id": "/m/07ytt",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "MNG": {
+    "iso3": "MNG",
+    "name": "Mongolia",
+    "topic_id": "/m/04w8f",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "ARM": {
+    "iso3": "ARM",
+    "name": "Armenia",
+    "topic_id": "/m/0jgx",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "ARG": {
+    "iso3": "ARG",
+    "name": "Argentina",
+    "topic_id": "/m/0jgd",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "ZMB": {
+    "iso3": "ZMB",
+    "name": "Zambia",
+    "topic_id": "/m/088vb",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "LAO": {
+    "iso3": "LAO",
+    "name": "Laos",
+    "topic_id": "/m/04hhv",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "KGZ": {
+    "iso3": "KGZ",
+    "name": "Kyrgyzstan",
+    "topic_id": "/m/0jt3tjf",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "USA": {
+    "iso3": "USA",
+    "name": "United States",
+    "topic_id": "/m/09c7w0",
+    "source": "Verified Google Trends browser country entity"
+  },
+  "LIE": {
+    "iso3": "LIE",
+    "name": "Liechtenstein",
+    "topic_id": "/m/04j53",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "CIV": {
+    "iso3": "CIV",
+    "name": "C\u00f4te d\u2019Ivoire",
+    "topic_id": "/m/0fv4v",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "NER": {
+    "iso3": "NER",
+    "name": "Niger",
+    "topic_id": "/m/05cc1",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "MLI": {
+    "iso3": "MLI",
+    "name": "Mali",
+    "topic_id": "/m/04v09",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "TJK": {
+    "iso3": "TJK",
+    "name": "Tajikistan",
+    "topic_id": "/m/07dvs",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "ECU": {
+    "iso3": "ECU",
+    "name": "Ecuador",
+    "topic_id": "/m/02k1b",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "BDI": {
+    "iso3": "BDI",
+    "name": "Burundi",
+    "topic_id": "/m/0169t",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "FIN": {
+    "iso3": "FIN",
+    "name": "Finland",
+    "topic_id": "/m/02vzc",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "CYP": {
+    "iso3": "CYP",
+    "name": "Cyprus",
+    "topic_id": "/m/01ppq",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "VCT": {
+    "iso3": "VCT",
+    "name": "Saint Vincent and the Grenadines",
+    "topic_id": "/m/06s6l",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "KHM": {
+    "iso3": "KHM",
+    "name": "Cambodia",
+    "topic_id": "/m/01xbgx",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "ARE": {
+    "iso3": "ARE",
+    "name": "United Arab Emirates",
+    "topic_id": "/m/0j1z8",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "UGA": {
+    "iso3": "UGA",
+    "name": "Uganda",
+    "topic_id": "/m/07tp2",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "CRI": {
+    "iso3": "CRI",
+    "name": "Costa Rica",
+    "topic_id": "/m/01p8s",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "SLV": {
+    "iso3": "SLV",
+    "name": "El Salvador",
+    "topic_id": "/m/02k8k",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "BLZ": {
+    "iso3": "BLZ",
+    "name": "Belize",
+    "topic_id": "/m/0164b",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "BEN": {
+    "iso3": "BEN",
+    "name": "Benin",
+    "topic_id": "/m/0164v",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "BLR": {
+    "iso3": "BLR",
+    "name": "Belarus",
+    "topic_id": "/m/0163v",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "CUB": {
+    "iso3": "CUB",
+    "name": "Cuba",
+    "topic_id": "/m/0d04z6",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "NIC": {
+    "iso3": "NIC",
+    "name": "Nicaragua",
+    "topic_id": "/m/05c74",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "GBR": {
+    "iso3": "GBR",
+    "name": "United Kingdom",
+    "topic_id": "/m/07ssc",
+    "source": "Verified Google Trends browser country entity"
+  },
+  "TTO": {
+    "iso3": "TTO",
+    "name": "Trinidad and Tobago",
+    "topic_id": "/m/09lxtg",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "PAK": {
+    "iso3": "PAK",
+    "name": "Pakistan",
+    "topic_id": "/m/05sb1",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "MAR": {
+    "iso3": "MAR",
+    "name": "Morocco",
+    "topic_id": "/m/04wgh",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "SSD": {
+    "iso3": "SSD",
+    "name": "South Sudan",
+    "topic_id": "/m/05rznz",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "BIH": {
+    "iso3": "BIH",
+    "name": "Bosnia and Herzegovina",
+    "topic_id": "/m/0166b",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "FRA": {
+    "iso3": "FRA",
+    "name": "France",
+    "topic_id": "/m/0f8l9c",
+    "source": "Verified Google Trends browser country entity"
+  },
+  "TON": {
+    "iso3": "TON",
+    "name": "Tonga",
+    "topic_id": "/m/07fb6",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "BHS": {
+    "iso3": "BHS",
+    "name": "Bahamas",
+    "topic_id": "/m/0160w",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "SLE": {
+    "iso3": "SLE",
+    "name": "Sierra Leone",
+    "topic_id": "/m/06s_2",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "CAF": {
+    "iso3": "CAF",
+    "name": "Central African Republic",
+    "topic_id": "/m/01nyl",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "SLB": {
+    "iso3": "SLB",
+    "name": "Solomon Islands",
+    "topic_id": "/m/01n8qg",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "LSO": {
+    "iso3": "LSO",
+    "name": "Lesotho",
+    "topic_id": "/m/04hvw",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "DZA": {
+    "iso3": "DZA",
+    "name": "Algeria",
+    "topic_id": "/m/0h3y",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "BRB": {
+    "iso3": "BRB",
+    "name": "Barbados",
+    "topic_id": "/m/0162v",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "BGD": {
+    "iso3": "BGD",
+    "name": "Bangladesh",
+    "topic_id": "/m/0162b",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "ETH": {
+    "iso3": "ETH",
+    "name": "Ethiopia",
+    "topic_id": "/m/019pcs",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "MDA": {
+    "iso3": "MDA",
+    "name": "Moldova",
+    "topic_id": "/m/04w4s",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "SAU": {
+    "iso3": "SAU",
+    "name": "Saudi Arabia",
+    "topic_id": "/m/01z215",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "SMR": {
+    "iso3": "SMR",
+    "name": "San Marino",
+    "topic_id": "/m/06sff",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "BEL": {
+    "iso3": "BEL",
+    "name": "Belgium",
+    "topic_id": "/m/0154j",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "GEO": {
+    "iso3": "GEO",
+    "name": "Georgia",
+    "topic_id": "/m/0d0kn",
+    "source": "Verified Google Trends browser country entity"
+  },
+  "RUS": {
+    "iso3": "RUS",
+    "name": "Russia",
+    "topic_id": "/m/06bnz",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "GRD": {
+    "iso3": "GRD",
+    "name": "Grenada",
+    "topic_id": "/m/035yg",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "GNB": {
+    "iso3": "GNB",
+    "name": "Guinea-Bissau",
+    "topic_id": "/m/036b_",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "PRK": {
+    "iso3": "PRK",
+    "name": "North Korea",
+    "topic_id": "/m/05b7q",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "GUY": {
+    "iso3": "GUY",
+    "name": "Guyana",
+    "topic_id": "/m/034m8",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "SWE": {
+    "iso3": "SWE",
+    "name": "Sweden",
+    "topic_id": "/m/0d0vqn",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "IDN": {
+    "iso3": "IDN",
+    "name": "Indonesia",
+    "topic_id": "/m/03ryn",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "GAB": {
+    "iso3": "GAB",
+    "name": "Gabon",
+    "topic_id": "/m/03548",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "LBY": {
+    "iso3": "LBY",
+    "name": "Libya",
+    "topic_id": "/m/04gqr",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "DOM": {
+    "iso3": "DOM",
+    "name": "Dominican Republic",
+    "topic_id": "/m/027rn",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "TLS": {
+    "iso3": "TLS",
+    "name": "Timor-Leste",
+    "topic_id": "/m/02lx0",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "SOM": {
+    "iso3": "SOM",
+    "name": "Somalia",
+    "topic_id": "/m/06tgw",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "SGP": {
+    "iso3": "SGP",
+    "name": "Singapore",
+    "topic_id": "/m/06t2t",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "LUX": {
+    "iso3": "LUX",
+    "name": "Luxembourg",
+    "topic_id": "/m/04g61",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "KIR": {
+    "iso3": "KIR",
+    "name": "Kiribati",
+    "topic_id": "/m/047t_",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "COD": {
+    "iso3": "COD",
+    "name": "Democratic Republic of the Congo",
+    "topic_id": "/m/088xp",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "COM": {
+    "iso3": "COM",
+    "name": "Comoros",
+    "topic_id": "/m/01n6c",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "FJI": {
+    "iso3": "FJI",
+    "name": "Fiji",
+    "topic_id": "/m/02wt0",
+    "source": "Verified Google Trends browser country entity"
+  },
+  "MUS": {
+    "iso3": "MUS",
+    "name": "Mauritius",
+    "topic_id": "/m/04vs9",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "PRY": {
+    "iso3": "PRY",
+    "name": "Paraguay",
+    "topic_id": "/m/05v10",
+    "source": "Verified Google Trends browser country entity"
+  },
+  "TUN": {
+    "iso3": "TUN",
+    "name": "Tunisia",
+    "topic_id": "/m/07fj_",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "THA": {
+    "iso3": "THA",
+    "name": "Thailand",
+    "topic_id": "/m/07f1x",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "CZE": {
+    "iso3": "CZE",
+    "name": "Czechia",
+    "topic_id": "/m/01mjq",
+    "source": "Verified Google Trends browser country entity"
+  },
+  "JPN": {
+    "iso3": "JPN",
+    "name": "Japan",
+    "topic_id": "/m/03_3d",
+    "source": "Verified Google Trends browser country entity"
+  },
+  "ISR": {
+    "iso3": "ISR",
+    "name": "Israel",
+    "topic_id": "/m/03spz",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "MMR": {
+    "iso3": "MMR",
+    "name": "Myanmar",
+    "topic_id": "/m/04xn_",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "PLW": {
+    "iso3": "PLW",
+    "name": "Palau",
+    "topic_id": "/m/05tr7",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "RWA": {
+    "iso3": "RWA",
+    "name": "Rwanda",
+    "topic_id": "/m/06dfg",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "ATG": {
+    "iso3": "ATG",
+    "name": "Antigua and Barbuda",
+    "topic_id": "/m/0l3h",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "MRT": {
+    "iso3": "MRT",
+    "name": "Mauritania",
+    "topic_id": "/m/04vjh",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "SVN": {
+    "iso3": "SVN",
+    "name": "Slovenia",
+    "topic_id": "/m/06t8v",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "PAN": {
+    "iso3": "PAN",
+    "name": "Panama",
+    "topic_id": "/m/05qx1",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "AUS": {
+    "iso3": "AUS",
+    "name": "Australia",
+    "topic_id": "/m/0chghy",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "TGO": {
+    "iso3": "TGO",
+    "name": "Togo",
+    "topic_id": "/m/07f5x",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "OMN": {
+    "iso3": "OMN",
+    "name": "Oman",
+    "topic_id": "/m/05l8y",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "TUV": {
+    "iso3": "TUV",
+    "name": "Tuvalu",
+    "topic_id": "/m/07fsv",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "TCD": {
+    "iso3": "TCD",
+    "name": "Chad",
+    "topic_id": "/m/01p1b",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "CHL": {
+    "iso3": "CHL",
+    "name": "Chile",
+    "topic_id": "/m/01p1v",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "SRB": {
+    "iso3": "SRB",
+    "name": "Serbia",
+    "topic_id": "/m/077qn",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "KAZ": {
+    "iso3": "KAZ",
+    "name": "Kazakhstan",
+    "topic_id": "/m/047lj",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "SYC": {
+    "iso3": "SYC",
+    "name": "Seychelles",
+    "topic_id": "/m/06sw9",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "LVA": {
+    "iso3": "LVA",
+    "name": "Latvia",
+    "topic_id": "/m/04g5k",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "JOR": {
+    "iso3": "JOR",
+    "name": "Jordan",
+    "topic_id": "/m/03__y",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "VUT": {
+    "iso3": "VUT",
+    "name": "Vanuatu",
+    "topic_id": "/m/07z5n",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "MOZ": {
+    "iso3": "MOZ",
+    "name": "Mozambique",
+    "topic_id": "/m/04wlh",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "ROU": {
+    "iso3": "ROU",
+    "name": "Romania",
+    "topic_id": "/m/06c1y",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "SYR": {
+    "iso3": "SYR",
+    "name": "Syria",
+    "topic_id": "/m/06vbd",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "VNM": {
+    "iso3": "VNM",
+    "name": "Vietnam",
+    "topic_id": "/m/01crd5",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "IND": {
+    "iso3": "IND",
+    "name": "India",
+    "topic_id": "/m/03rk0",
+    "source": "Verified Google Trends browser country entity"
+  },
+  "LBR": {
+    "iso3": "LBR",
+    "name": "Liberia",
+    "topic_id": "/m/04hzj",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "AUT": {
+    "iso3": "AUT",
+    "name": "Austria",
+    "topic_id": "/m/0h7x",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "IRN": {
+    "iso3": "IRN",
+    "name": "Iran",
+    "topic_id": "/m/03shp",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "AND": {
+    "iso3": "AND",
+    "name": "Andorra",
+    "topic_id": "/m/0hg5",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "GRC": {
+    "iso3": "GRC",
+    "name": "Greece",
+    "topic_id": "/m/035qy",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "DEU": {
+    "iso3": "DEU",
+    "name": "Germany",
+    "topic_id": "/m/0345h",
+    "source": "Verified Google Trends browser country entity"
+  },
+  "GTM": {
+    "iso3": "GTM",
+    "name": "Guatemala",
+    "topic_id": "/m/0345_",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "BTN": {
+    "iso3": "BTN",
+    "name": "Bhutan",
+    "topic_id": "/m/07bxhl",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "ALB": {
+    "iso3": "ALB",
+    "name": "Albania",
+    "topic_id": "/m/0jdx",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "AFG": {
+    "iso3": "AFG",
+    "name": "Afghanistan",
+    "topic_id": "/m/0jdd",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "HTI": {
+    "iso3": "HTI",
+    "name": "Haiti",
+    "topic_id": "/m/03gyl",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "URY": {
+    "iso3": "URY",
+    "name": "Uruguay",
+    "topic_id": "/m/07twz",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "TKM": {
+    "iso3": "TKM",
+    "name": "Turkmenistan",
+    "topic_id": "/m/01c4pv",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "SWZ": {
+    "iso3": "SWZ",
+    "name": "Swaziland",
+    "topic_id": "/m/06v36",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "TWN": {
+    "iso3": "TWN",
+    "name": "Taiwan",
+    "topic_id": "/m/06f32",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "VEN": {
+    "iso3": "VEN",
+    "name": "Venezuela",
+    "topic_id": "/m/07ylj",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "BFA": {
+    "iso3": "BFA",
+    "name": "Burkina Faso",
+    "topic_id": "/m/01699",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "LTU": {
+    "iso3": "LTU",
+    "name": "Lithuania",
+    "topic_id": "/m/04gzd",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "MNE": {
+    "iso3": "MNE",
+    "name": "Montenegro",
+    "topic_id": "/m/056vv",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "SDN": {
+    "iso3": "SDN",
+    "name": "Sudan",
+    "topic_id": "/m/06tw8",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "CMR": {
+    "iso3": "CMR",
+    "name": "Cameroon",
+    "topic_id": "/m/01nln",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "TZA": {
+    "iso3": "TZA",
+    "name": "Tanzania",
+    "topic_id": "/m/07dzf",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "QAT": {
+    "iso3": "QAT",
+    "name": "Qatar",
+    "topic_id": "/m/0697s",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "BOL": {
+    "iso3": "BOL",
+    "name": "Bolivia",
+    "topic_id": "/m/0165v",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "EGY": {
+    "iso3": "EGY",
+    "name": "Egypt",
+    "topic_id": "/m/02k54",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "HND": {
+    "iso3": "HND",
+    "name": "Honduras",
+    "topic_id": "/m/03h2c",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "MYS": {
+    "iso3": "MYS",
+    "name": "Malaysia",
+    "topic_id": "/m/09pmkv",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "KWT": {
+    "iso3": "KWT",
+    "name": "Kuwait",
+    "topic_id": "/m/047yc",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "WSM": {
+    "iso3": "WSM",
+    "name": "Samoa",
+    "topic_id": "/m/06s9y",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "AGO": {
+    "iso3": "AGO",
+    "name": "Angola",
+    "topic_id": "/m/0j4b",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "LBN": {
+    "iso3": "LBN",
+    "name": "Lebanon",
+    "topic_id": "/m/04hqz",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "POL": {
+    "iso3": "POL",
+    "name": "Poland",
+    "topic_id": "/m/05qhw",
+    "source": "FB15k entity-name mapping; candidate only"
+  },
+  "DNK": {
+    "iso3": "DNK",
+    "name": "Denmark",
+    "topic_id": "/g/121p5z1h",
+    "source": "Google primary country autocomplete; legacy /m/0k6nt generic topic rejected"
+  },
+  "MKD": {
+    "iso3": "MKD",
+    "name": "North Macedonia",
+    "topic_id": "/m/0bjv6",
+    "source": "FB15k name/description candidate; browser review required"
+  },
+  "YEM": {
+    "iso3": "YEM",
+    "name": "Yemen",
+    "topic_id": "/m/01z88t",
+    "source": "FB15k name/description candidate; browser review required"
+  },
+  "COG": {
+    "iso3": "COG",
+    "name": "Republic of the Congo",
+    "topic_id": "/m/01rxw",
+    "source": "FB15k name/description candidate; browser review required"
+  },
+  "EST": {
+    "iso3": "EST",
+    "name": "Estonia",
+    "topic_id": "/m/02kmm",
+    "source": "Google Trends browser Country in Europe autocomplete"
+  },
+  "PSE": {
+    "iso3": "PSE",
+    "name": "Palestine",
+    "topic_id": "/m/01k0p4",
+    "source": "Primary Google State of Palestine search; Freebase ID independently checked on Wikidata Q219060",
+    "identity_source_url": "https://www.wikidata.org/wiki/Q219060"
+  },
+  "MHL": {
+    "iso3": "MHL",
+    "name": "Marshall Islands",
+    "topic_id": "/m/04v6v",
+    "source": "Verified Google Trends Country in Oceania autocomplete"
+  },
+  "STP": {
+    "iso3": "STP",
+    "name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+    "topic_id": "/m/0j681",
+    "source": "Verified Google Trends Country in Central Africa autocomplete"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "batch_id": "browser-036",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F01mjq%2C%2Fm%2F04gzd%2C%2Fm%2F04g61%2C%2Fm%2F04g5k%2C%2Fm%2F04w4s&hl=en-US",
+  "retrieved_at": "2026-10-16T14:25:37.023219+00:00",
+  "topic_columns": {
+    "Czechia: (Worldwide)": {
+      "iso3": "CZE",
+      "topic_id": "/m/01mjq",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Lithuania: (Worldwide)": {
+      "iso3": "LTU",
+      "topic_id": "/m/04gzd",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Luxembourg: (Worldwide)": {
+      "iso3": "LUX",
+      "topic_id": "/m/04g61",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Latvia: (Worldwide)": {
+      "iso3": "LVA",
+      "topic_id": "/m/04g5k",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Moldova: (Worldwide)": {
+      "iso3": "MDA",
+      "topic_id": "/m/04w4s",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "batch_id": "browser-051",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F01mjq%2C%2Fm%2F02kmm%2C%2Fm%2F01k0p4&hl=en-US",
+  "retrieved_at": "2026-10-16T14:39:10.489495+00:00",
+  "topic_columns": {
+    "Czechia: (Worldwide)": {
+      "iso3": "CZE",
+      "topic_id": "/m/01mjq",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Europe",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Estonia: (Worldwide)": {
+      "iso3": "EST",
+      "topic_id": "/m/02kmm",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Europe",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Palestine: (Worldwide)": {
+      "iso3": "PSE",
+      "topic_id": "/m/01k0p4",
+      "verified_country_topic": true,
+      "google_label_type": "Topic",
+      "verification_note": "Primary Google autocomplete entity selected; the country/state identity was independently checked against the archived entity mapping or Wikidata. See the topic audit note for this generic Topic label. Browser entity and CSV header reviewed: Topic. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

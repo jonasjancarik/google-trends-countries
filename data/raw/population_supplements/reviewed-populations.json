@@ -1,0 +1,36 @@
+{
+  "records": [
+    {
+      "iso3": "TWN",
+      "population": 23299132,
+      "population_year": 2025,
+      "population_as_of": "2025-12-31",
+      "population_source": "Taiwan Ministry of the Interior, household registration",
+      "population_source_url": "https://www.ris.gov.tw/info-liferay/app/channel/newsEnglishDetail/26245250",
+      "population_definition": "Year-end household-registered population",
+      "population_note": "Registration-based year-end count; not a harmonized World Bank mid-year resident estimate. Includes Taiwan-administered territory; registration and residence can differ.",
+      "verification_excerpt": "By the end of Dec 2025, the total population was 23,299,132",
+      "body_file": "ed026f168038884ab9f390639fe50557033d4665ff227eb3ece7cb3e5007c697.html",
+      "sha256": "ed026f168038884ab9f390639fe50557033d4665ff227eb3ece7cb3e5007c697",
+      "retrieved_at": "2026-10-16T20:21:21.978743+00:00",
+      "http_status": 200,
+      "verified_official_population": true
+    },
+    {
+      "iso3": "VAT",
+      "population": 882,
+      "population_year": 2024,
+      "population_as_of": "2024-12-31",
+      "population_source": "Governorate of Vatican City State",
+      "population_source_url": "https://vaticanstate.va/en/state-and-government/general-informations/population.html",
+      "population_definition": "Year-end residents of Vatican City State, citizens and non-citizens",
+      "population_note": "Vatican City residents correspond to the geographical Google topic used for the Holy See row; they are not the population of the Holy See as an institution. The observation predates the search window.",
+      "verification_excerpt": "Residents of the State (both citizens and non-citizens): 882; updated to 31 December 2024",
+      "body_file": "3182098dd976bca7bd1fb76215064194273e9ea20e560ba6422aaca1712297f6.html",
+      "sha256": "3182098dd976bca7bd1fb76215064194273e9ea20e560ba6422aaca1712297f6",
+      "retrieved_at": "2026-10-16T20:21:24.334173+00:00",
+      "http_status": 200,
+      "verified_official_population": true
+    }
+  ]
+}

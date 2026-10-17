@@ -1,0 +1,44 @@
+{
+  "batch_id": "browser-028",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F01mjq%2C%2Fm%2F0166v%2C%2Fm%2F01nyl%2C%2Fm%2F01rxw%2C%2Fm%2F01n6c&hl=en-US",
+  "retrieved_at": "2026-10-16T14:21:38.924338+00:00",
+  "topic_columns": {
+    "Czechia: (Worldwide)": {
+      "iso3": "CZE",
+      "topic_id": "/m/01mjq",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Botswana: (Worldwide)": {
+      "iso3": "BWA",
+      "topic_id": "/m/0166v",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Southern Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Central African Republic: (Worldwide)": {
+      "iso3": "CAF",
+      "topic_id": "/m/01nyl",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Central Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Republic of the Congo: (Worldwide)": {
+      "iso3": "COG",
+      "topic_id": "/m/01rxw",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Central Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Comoros: (Worldwide)": {
+      "iso3": "COM",
+      "topic_id": "/m/01n6c",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in East Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

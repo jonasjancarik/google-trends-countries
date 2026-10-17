@@ -1,0 +1,49 @@
+{
+  "batch_id": "browser-058",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F02wt0%2C%2Fm%2F06t8v%2C%2Fm%2F0j4b%2C%2Fm%2F05b7q%2C%2Fm%2F07dzf&hl=en-US",
+  "retrieved_at": "2026-10-16T19:40:53.664504+00:00",
+  "topic_columns": {
+    "Fiji: (Worldwide)": {
+      "iso3": "FJI",
+      "topic_id": "/m/02wt0",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Oceania",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Oceania. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Slovenia: (Worldwide)": {
+      "iso3": "SVN",
+      "topic_id": "/m/06t8v",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Europe",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Angola: (Worldwide)": {
+      "iso3": "AGO",
+      "topic_id": "/m/0j4b",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Central Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Central Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "North Korea: (Worldwide)": {
+      "iso3": "PRK",
+      "topic_id": "/m/05b7q",
+      "verified_country_topic": true,
+      "google_label_type": "Country in East Asia",
+      "verification_note": "Browser entity and CSV header reviewed: Country in East Asia. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Tanzania: (Worldwide)": {
+      "iso3": "TZA",
+      "topic_id": "/m/07dzf",
+      "verified_country_topic": true,
+      "google_label_type": "Country in East Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in East Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

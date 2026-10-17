@@ -1,0 +1,44 @@
+{
+  "batch_id": "browser-021",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F0f8l9c%2C%2Fm%2F07f1x%2C%2Fm%2F07dzf%2C%2Fm%2F07tp2%2C%2Fm%2F07t21&hl=en-US",
+  "retrieved_at": "2026-10-16T14:17:47.263807+00:00",
+  "topic_columns": {
+    "France: (Worldwide)": {
+      "iso3": "FRA",
+      "topic_id": "/m/0f8l9c",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Thailand: (Worldwide)": {
+      "iso3": "THA",
+      "topic_id": "/m/07f1x",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Asia. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Tanzania: (Worldwide)": {
+      "iso3": "TZA",
+      "topic_id": "/m/07dzf",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in East Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Uganda: (Worldwide)": {
+      "iso3": "UGA",
+      "topic_id": "/m/07tp2",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in East Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Ukraine: (Worldwide)": {
+      "iso3": "UKR",
+      "topic_id": "/m/07t21",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

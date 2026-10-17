@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-10-16T20:22:56.397109+00:00",
+  "state": "remaining_data_retry_complete",
+  "country_topics_exported": 197,
+  "comparison_exports": 76,
+  "refinement_batches_imported_this_retry": [
+    "056",
+    "057",
+    "058",
+    "059",
+    "060",
+    "061",
+    "062",
+    "063",
+    "064",
+    "065",
+    "066",
+    "067",
+    "068",
+    "069",
+    "070",
+    "071",
+    "072",
+    "073",
+    "074"
+  ],
+  "pending_refinement_batches": [],
+  "pending_plan": "config/browser-refinement-plan.json",
+  "outcome": "Retried Cabo Verde, Haiti and Comoros. One new paired comparison was accepted; Haiti and Comoros repeats were identical and excluded from calibration duplication. All three still fail the minimum-score gate. Reviewed official population supplements for Taiwan and Vatican City bring population coverage to 197 and eligible rankings to 194; source definitions differ from World Bank observations.",
+  "previous_display_error": {
+    "comparison": "056",
+    "error": "Oops! There was a problem displaying this page. Please try again",
+    "http_status": null,
+    "normal_reload_attempts": 1,
+    "resolved_by": "Later normal browser visit to the same comparison succeeded."
+  },
+  "precision_retry_receipt": "data/raw/followup_checks/2026-10-16/receipt.json"
+}

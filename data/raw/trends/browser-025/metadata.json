@@ -1,0 +1,44 @@
+{
+  "batch_id": "browser-025",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F01mjq%2C%2Fm%2F0169t%2C%2Fm%2F0154j%2C%2Fm%2F0164v%2C%2Fm%2F015qh&hl=en-US",
+  "retrieved_at": "2026-10-16T14:19:39.803372+00:00",
+  "topic_columns": {
+    "Czechia: (Worldwide)": {
+      "iso3": "CZE",
+      "topic_id": "/m/01mjq",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Burundi: (Worldwide)": {
+      "iso3": "BDI",
+      "topic_id": "/m/0169t",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in East Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Belgium: (Worldwide)": {
+      "iso3": "BEL",
+      "topic_id": "/m/0154j",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Benin: (Worldwide)": {
+      "iso3": "BEN",
+      "topic_id": "/m/0164v",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in West Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Bulgaria: (Worldwide)": {
+      "iso3": "BGR",
+      "topic_id": "/m/015qh",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in the Balkans. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

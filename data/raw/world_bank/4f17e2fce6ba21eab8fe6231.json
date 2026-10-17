@@ -1,0 +1,7 @@
+{
+  "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?format=json&per_page=20000&date=2020%3A2025&source=2&page=1",
+  "retrieved_at": "2026-10-16T10:27:42.954270+00:00",
+  "sha256": "2f492bcedb011d470c017c94a683df945b130add7ecf5ddf105fa5d6df407944",
+  "body_file": "2f492bcedb011d470c017c94a683df945b130add7ecf5ddf105fa5d6df407944.body.json",
+  "http_status": 200
+}

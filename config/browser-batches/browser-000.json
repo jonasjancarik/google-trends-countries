@@ -1,0 +1,20 @@
+{
+  "batch_id": "browser-000-france-reference",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01%202026-09-30&q=%2Fm%2F0f8l9c&hl=en-US",
+  "retrieved_at": "2026-10-16T13:52:54.366944+00:00",
+  "topic_columns": {
+    "France: (Worldwide)": {
+      "iso3": "FRA",
+      "topic_id": "/m/0f8l9c",
+      "verified_country_topic": true,
+      "verification_note": "Browser displayed France, Country in Europe, Worldwide, all categories, Web Search, 10/1/25\u20139/30/26; Interest over time CSV downloaded."
+    }
+  }
+}

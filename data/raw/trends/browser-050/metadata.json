@@ -1,0 +1,35 @@
+{
+  "batch_id": "browser-050",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F01mjq%2C%2Fm%2F06f32%2C%2Fm%2F07ytt&hl=en-US",
+  "retrieved_at": "2026-10-16T14:32:47.293180+00:00",
+  "topic_columns": {
+    "Czechia: (Worldwide)": {
+      "iso3": "CZE",
+      "topic_id": "/m/01mjq",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Europe",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Taiwan: (Worldwide)": {
+      "iso3": "TWN",
+      "topic_id": "/m/06f32",
+      "verified_country_topic": true,
+      "google_label_type": "Topic",
+      "verification_note": "Primary Google autocomplete entity selected; preserved Freebase description independently identifies the country/state for this generic Topic label. Browser entity and CSV header reviewed: Topic. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Vatican City: (Worldwide)": {
+      "iso3": "VAT",
+      "topic_id": "/m/07ytt",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Europe",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

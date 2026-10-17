@@ -1,0 +1,44 @@
+{
+  "batch_id": "browser-027",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F01mjq%2C%2Fm%2F0164b%2C%2Fm%2F0165v%2C%2Fm%2F0162v%2C%2Fm%2F0167v&hl=en-US",
+  "retrieved_at": "2026-10-16T14:20:38.235040+00:00",
+  "topic_columns": {
+    "Czechia: (Worldwide)": {
+      "iso3": "CZE",
+      "topic_id": "/m/01mjq",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Belize: (Worldwide)": {
+      "iso3": "BLZ",
+      "topic_id": "/m/0164b",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Central America. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Bolivia: (Worldwide)": {
+      "iso3": "BOL",
+      "topic_id": "/m/0165v",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in South America. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Barbados: (Worldwide)": {
+      "iso3": "BRB",
+      "topic_id": "/m/0162v",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in the Caribbean. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Brunei: (Worldwide)": {
+      "iso3": "BRN",
+      "topic_id": "/m/0167v",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Asia. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

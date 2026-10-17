@@ -1,0 +1,44 @@
+{
+  "batch_id": "browser-042",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F01mjq%2C%2Fm%2F06npd%2C%2Fm%2F06t8v%2C%2Fm%2F0d0vqn%2C%2Fm%2F06v36&hl=en-US",
+  "retrieved_at": "2026-10-16T14:27:57.369031+00:00",
+  "topic_columns": {
+    "Czechia: (Worldwide)": {
+      "iso3": "CZE",
+      "topic_id": "/m/01mjq",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Slovakia: (Worldwide)": {
+      "iso3": "SVK",
+      "topic_id": "/m/06npd",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Slovenia: (Worldwide)": {
+      "iso3": "SVN",
+      "topic_id": "/m/06t8v",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Sweden: (Worldwide)": {
+      "iso3": "SWE",
+      "topic_id": "/m/0d0vqn",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Eswatini: (Worldwide)": {
+      "iso3": "SWZ",
+      "topic_id": "/m/06v36",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Southern Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

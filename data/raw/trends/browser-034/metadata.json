@@ -1,0 +1,44 @@
+{
+  "batch_id": "browser-034",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F01mjq%2C%2Fm%2F03__y%2C%2Fm%2F0jt3tjf%2C%2Fm%2F047yc%2C%2Fm%2F04hhv&hl=en-US",
+  "retrieved_at": "2026-10-16T14:25:09.238901+00:00",
+  "topic_columns": {
+    "Czechia: (Worldwide)": {
+      "iso3": "CZE",
+      "topic_id": "/m/01mjq",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Jordan: (Worldwide)": {
+      "iso3": "JOR",
+      "topic_id": "/m/03__y",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in the Middle East. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Kyrgyzstan: (Worldwide)": {
+      "iso3": "KGZ",
+      "topic_id": "/m/0jt3tjf",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Central Asia. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Kuwait: (Worldwide)": {
+      "iso3": "KWT",
+      "topic_id": "/m/047yc",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in the Middle East. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Laos: (Worldwide)": {
+      "iso3": "LAO",
+      "topic_id": "/m/04hhv",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Asia. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

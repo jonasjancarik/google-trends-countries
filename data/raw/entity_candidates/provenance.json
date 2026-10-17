@@ -1,0 +1,23 @@
+[
+  {
+    "file": "gtab-550-topics.txt",
+    "source_url": "https://github.com/epfl-dlab/GoogleTrendsAnchorBank/blob/db69456f4a8312639c6d7bd6229cab7edb543310/gtab/data/550_cities_and_countries.txt",
+    "cached_on": "2026-10-16",
+    "sha256": "ea737a5b376fe32908ada5c345524c3742f180e23e6c6076e260e57cfdcfd641",
+    "role": "Candidate country/entity identity only, not attention measurements"
+  },
+  {
+    "file": "freebase-mid2name.txt",
+    "source_url": "https://github.com/yao8839836/kg-bert/blob/f3f260309c5e2986467a66e0e68fa7f53b1a150e/data/FB15K/FB15k_mid2name.txt",
+    "cached_on": "2026-10-16",
+    "sha256": "4da94b8059a83bc7e08c832f573d34221d38e85030576e332a0d0e9726d13d73",
+    "role": "Candidate country/entity identity only, not attention measurements"
+  },
+  {
+    "file": "freebase-mid2description.txt",
+    "source_url": "https://github.com/yao8839836/kg-bert/blob/f3f260309c5e2986467a66e0e68fa7f53b1a150e/data/FB15K/FB15k_mid2description.txt",
+    "cached_on": "2026-10-16",
+    "sha256": "0530d81b97d76538a19f09626eb654563120c9777e8ce67c0f7facf29f801c9f",
+    "role": "Candidate country/entity identity only, not attention measurements"
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "batch_id": "browser-059",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F02wt0%2C%2Fm%2F07tp2%2C%2Fm%2F01xbgx%2C%2Fm%2F01z88t%2C%2Fm%2F04v09&hl=en-US",
+  "retrieved_at": "2026-10-16T19:41:18.499178+00:00",
+  "topic_columns": {
+    "Fiji: (Worldwide)": {
+      "iso3": "FJI",
+      "topic_id": "/m/02wt0",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Oceania",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Oceania. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Uganda: (Worldwide)": {
+      "iso3": "UGA",
+      "topic_id": "/m/07tp2",
+      "verified_country_topic": true,
+      "google_label_type": "Country in East Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in East Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Cambodia: (Worldwide)": {
+      "iso3": "KHM",
+      "topic_id": "/m/01xbgx",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Asia",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Asia. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Yemen: (Worldwide)": {
+      "iso3": "YEM",
+      "topic_id": "/m/01z88t",
+      "verified_country_topic": true,
+      "google_label_type": "Country in the Middle East",
+      "verification_note": "Browser entity and CSV header reviewed: Country in the Middle East. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Mali: (Worldwide)": {
+      "iso3": "MLI",
+      "topic_id": "/m/04v09",
+      "verified_country_topic": true,
+      "google_label_type": "Country in West Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in West Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

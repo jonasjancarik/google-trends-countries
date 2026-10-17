@@ -1,0 +1,7 @@
+{
+  "url": "https://api.worldbank.org/v2/country/all/indicator/ST.INT.ARVL?format=json&per_page=20000&date=2020%3A2025&source=2&page=1",
+  "retrieved_at": "2026-10-16T10:27:44.302174+00:00",
+  "sha256": "04cc884ce14ceb2272d180a2489460f767aeb40e68079baa00896412b434a212",
+  "body_file": "04cc884ce14ceb2272d180a2489460f767aeb40e68079baa00896412b434a212.body.json",
+  "http_status": 200
+}

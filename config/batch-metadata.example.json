@@ -1,0 +1,20 @@
+{
+  "batch_id": "replace-with-unique-comparison-name",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore",
+  "retrieved_at": "2026-10-16T10:00:00Z",
+  "topic_columns": {
+    "REPLACE_WITH_EXACT_CSV_COLUMN_HEADER": {
+      "iso3": "FRA",
+      "topic_id": "REPLACE_WITH_REVIEWED_GOOGLE_TOPIC_ID",
+      "verified_country_topic": false,
+      "verification_note": ""
+    }
+  }
+}

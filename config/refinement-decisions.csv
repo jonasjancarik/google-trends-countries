@@ -1,0 +1,80 @@
+iso3,country,action,reference,reason,current_status,collection_outcome
+AFG,Afghanistan,recollect,CZE,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+DZA,Algeria,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+AGO,Angola,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+BRB,Barbados,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+BLZ,Belize,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+BEN,Benin,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+BTN,Bhutan,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+BWA,Botswana,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+BRN,Brunei,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+BGR,Bulgaria,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+BFA,Burkina Faso,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+CPV,Cabo Verde,withhold,,Own peak already reaches 100 while baseline is <=3/censored; changing the comparison reference cannot repair whole-window precision.,Low search-volume precision; ranking withheld,Collected; own peak is 100 but some intervals remain below 5
+KHM,Cambodia,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+CMR,Cameroon,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+TCD,Chad,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+COM,Comoros,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Low search-volume precision; ranking withheld,Collected; own peak is 100 but some intervals remain below 5
+CYP,Cyprus,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+CIV,Côte d'Ivoire,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+COD,DR Congo,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+DJI,Djibouti,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+ECU,Ecuador,recollect,CZE,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+GNQ,Equatorial Guinea,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+ERI,Eritrea,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+SWZ,Eswatini,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+ETH,Ethiopia,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+GAB,Gabon,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+GMB,Gambia,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+GHA,Ghana,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+GTM,Guatemala,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+GIN,Guinea,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+GNB,Guinea-Bissau,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+GUY,Guyana,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+HTI,Haiti,recollect,CZE,Reference selected from measured peak magnitude; no search value is imputed.,Low search-volume precision; ranking withheld,Collected; own peak is 100 but some intervals remain below 5
+IRQ,Iraq,recollect,CZE,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+KAZ,Kazakhstan,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+KEN,Kenya,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+LSO,Lesotho,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+LBR,Liberia,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+MDG,Madagascar,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+MWI,Malawi,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+MLI,Mali,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+MHL,Marshall Islands,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+MRT,Mauritania,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+FSM,"Micronesia, Federated States of",recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+MOZ,Mozambique,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+MMR,Myanmar,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+NAM,Namibia,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+NPL,Nepal,recollect,CZE,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+NER,Niger,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+PRK,North Korea,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+PNG,Papua New Guinea,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+PRY,Paraguay,recollect,CZE,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+COG,Republic of the Congo,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+ROU,Romania,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+WSM,Samoa,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+STP,Sao Tome and Principe,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+SEN,Senegal,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+SLE,Sierra Leone,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+SVN,Slovenia,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+SLB,Solomon Islands,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+SOM,Somalia,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+SSD,South Sudan,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+LKA,Sri Lanka,recollect,CZE,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+SDN,Sudan,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+SUR,Suriname,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+SYR,Syria,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+TJK,Tajikistan,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+TZA,Tanzania,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+TLS,Timor-Leste,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+TGO,Togo,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+TKM,Turkmenistan,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+TUV,Tuvalu,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+UGA,Uganda,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+UZB,Uzbekistan,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+VUT,Vanuatu,recollect,NRU,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+VEN,Venezuela,recollect,CZE,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+YEM,Yemen,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+ZMB,Zambia,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration
+ZWE,Zimbabwe,recollect,FJI,Reference selected from measured peak magnitude; no search value is imputed.,Eligible,Collected; eligible after calibration

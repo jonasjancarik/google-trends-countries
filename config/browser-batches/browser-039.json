@@ -1,0 +1,44 @@
+{
+  "batch_id": "browser-039",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F01mjq%2C%2Fm%2F05c74%2C%2Fm%2F05l8y%2C%2Fm%2F05qx1%2C%2Fm%2F05qkp&hl=en-US",
+  "retrieved_at": "2026-10-16T14:26:24.509034+00:00",
+  "topic_columns": {
+    "Czechia: (Worldwide)": {
+      "iso3": "CZE",
+      "topic_id": "/m/01mjq",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Nicaragua: (Worldwide)": {
+      "iso3": "NIC",
+      "topic_id": "/m/05c74",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Central America. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Oman: (Worldwide)": {
+      "iso3": "OMN",
+      "topic_id": "/m/05l8y",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in the Middle East. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Panama: (Worldwide)": {
+      "iso3": "PAN",
+      "topic_id": "/m/05qx1",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Central America. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Papua New Guinea: (Worldwide)": {
+      "iso3": "PNG",
+      "topic_id": "/m/05qkp",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Oceania. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

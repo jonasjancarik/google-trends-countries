@@ -1,0 +1,25 @@
+{
+  "ranked_countries": 194,
+  "relationships": {
+    "population": {
+      "spearman_rho": 0.7007096103511893,
+      "n": 194
+    },
+    "gdp_usd": {
+      "spearman_rho": 0.9414515429695695,
+      "n": 186
+    },
+    "gdp_per_capita_usd": {
+      "spearman_rho": 0.3827748742359748,
+      "n": 186
+    },
+    "tourist_arrivals": {
+      "status": "unavailable",
+      "reason": "At least five varying country pairs with recent indicator values are required",
+      "n": 0
+    }
+  },
+  "population_vs_per_capita_rho": -0.6331047404601167,
+  "per_capita_vs_adjusted_rank_n": 179,
+  "per_capita_vs_adjusted_rank_rho": 0.3208649802272299
+}

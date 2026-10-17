@@ -1,0 +1,68 @@
+[
+  {
+    "checked_on": "2026-10-16",
+    "source": "Google Trends public topic suggestions",
+    "url": "https://trends.google.com/trends/api/autocomplete/France?hl=en-US",
+    "http_status": 200,
+    "outcome": "Suggestions returned unrelated or narrower entities; no automatic country-topic match was accepted."
+  },
+  {
+    "checked_on": "2026-10-16",
+    "source": "Wikidata Q142",
+    "url": "https://www.wikidata.org/wiki/Special:EntityData/Q142.json",
+    "http_status": 200,
+    "outcome": "France's Freebase ID /m/0f8l9c was verified as a candidate; this alone does not validate Google topic coverage."
+  },
+  {
+    "checked_on": "2026-10-16",
+    "source": "Google Trends public measurement endpoint",
+    "url": "https://trends.google.com/trends/api/explore",
+    "parameters": {
+      "hl": "en-US",
+      "tz": 0,
+      "comparisonItem": [
+        {
+          "keyword": "/m/0f8l9c",
+          "geo": "",
+          "time": "2025-10-01 2026-09-30"
+        }
+      ],
+      "category": 0,
+      "property": ""
+    },
+    "http_status": 429,
+    "error": "HTTP Error 429: unknown",
+    "outcome": "No measurement received. No retries, alternate identities, proxies or bypasses were attempted."
+  },
+  {
+    "checked_on": "2026-10-16",
+    "retrieved_at": "2026-10-16T14:03:10.389490+00:00",
+    "source": "Google Trends browser interface",
+    "url": "https://trends.google.com/trends/explore",
+    "http_status": 200,
+    "outcome": "Browser interface supplied actual worldwide country-topic weekly comparisons and native Interest over time CSV downloads. Each country entity label is reviewed; earlier direct HTTP 429 remains a historical check, not a browser access blocker."
+  },
+  {
+    "checked_on": "2026-10-16",
+    "source": "Google Trends browser interface during refinement",
+    "url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F02wt0%2C%2Fm%2F01n6c%2C%2Fm%2F0164v%2C%2Fm%2F01699%2C%2Fm%2F06tgw&hl=en-US",
+    "http_status": null,
+    "error": "Oops! There was a problem displaying this page. Please try again",
+    "outcome": "Same error after one normal page reload. Collection stopped; all 197 entities already had native exports."
+  },
+  {
+    "checked_on": "2026-10-16",
+    "retrieved_at": "2026-10-16T19:46:02.124947+00:00",
+    "source": "Google Trends browser interface, resumed refinement",
+    "url": "https://trends.google.com/trends/explore",
+    "http_status": null,
+    "outcome": "Normal browser navigation succeeded after the earlier display error. Downloaded 19 native Interest over time CSV comparisons (browser-056 through browser-074); all passed import and global calibration. Added 65 eligible entities. No HTTP status was observed in the UI."
+  },
+  {
+    "checked_on": "2026-10-16",
+    "retrieved_at": "2026-10-16T20:22:56.397109+00:00",
+    "source": "Google Trends browser interface, remaining precision exclusions",
+    "http_status": null,
+    "outcome": "Downloaded three paired comparisons. Cabo Verde imported as browser-075; Haiti and Comoros identical to browser-073 and browser-074. Scores remain below 5. See data/raw/followup_checks/2026-10-16/receipt.json"
+  }
+]

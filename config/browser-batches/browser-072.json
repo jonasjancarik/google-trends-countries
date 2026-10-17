@@ -1,0 +1,35 @@
+{
+  "batch_id": "browser-072",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F05br2%2C%2Fm%2F03548%2C%2Fm%2F04vjh&hl=en-US",
+  "retrieved_at": "2026-10-16T19:43:40.621562+00:00",
+  "topic_columns": {
+    "Nauru: (Worldwide)": {
+      "iso3": "NRU",
+      "topic_id": "/m/05br2",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Oceania",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Oceania. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Gabon: (Worldwide)": {
+      "iso3": "GAB",
+      "topic_id": "/m/03548",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Central Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Central Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Mauritania: (Worldwide)": {
+      "iso3": "MRT",
+      "topic_id": "/m/04vjh",
+      "verified_country_topic": true,
+      "google_label_type": "Country in Africa",
+      "verification_note": "Browser entity and CSV header reviewed: Country in Africa. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

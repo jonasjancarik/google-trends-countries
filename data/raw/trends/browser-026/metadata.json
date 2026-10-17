@@ -1,0 +1,44 @@
+{
+  "batch_id": "browser-026",
+  "geo": "",
+  "category": 0,
+  "property": "",
+  "window_start": "2025-10-01",
+  "window_end": "2026-09-30",
+  "resolution": "weekly",
+  "timezone": "Europe/Prague",
+  "source_url": "https://trends.google.com/trends/explore?date=2025-10-01+2026-09-30&q=%2Fm%2F01mjq%2C%2Fm%2F0161c%2C%2Fm%2F0160w%2C%2Fm%2F0166b%2C%2Fm%2F0163v&hl=en-US",
+  "retrieved_at": "2026-10-16T14:20:35.783372+00:00",
+  "topic_columns": {
+    "Czechia: (Worldwide)": {
+      "iso3": "CZE",
+      "topic_id": "/m/01mjq",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Bahrain: (Worldwide)": {
+      "iso3": "BHR",
+      "topic_id": "/m/0161c",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in the Middle East. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "The Bahamas: (Worldwide)": {
+      "iso3": "BHS",
+      "topic_id": "/m/0160w",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in the Caribbean. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Bosnia and Herzegovina: (Worldwide)": {
+      "iso3": "BIH",
+      "topic_id": "/m/0166b",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    },
+    "Belarus: (Worldwide)": {
+      "iso3": "BLR",
+      "topic_id": "/m/0163v",
+      "verified_country_topic": true,
+      "verification_note": "Browser entity and CSV header reviewed: Country in Europe. Worldwide, 10/1/25\u20139/30/26, all categories, Web Search."
+    }
+  }
+}

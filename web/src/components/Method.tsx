@@ -37,8 +37,8 @@ export function Method({ data, unranked }: { data: Snapshot; unranked: Country[]
           </p>
           <p>
             Per-resident values favour very small countries: a little worldwide interest divided among a few thousand
-            people becomes a large number. The comparison with a prediction from population and GDP is a second view
-            with a different benchmark. Neither benchmark establishes how much attention a country deserves.
+            people becomes a large number. The prediction offers a second benchmark, accounting for both population
+            and economic output per person. Neither benchmark establishes how much attention a country deserves.
           </p>
         </div>
         <div>

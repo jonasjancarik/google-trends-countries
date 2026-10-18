@@ -429,6 +429,133 @@ main {
   border-bottom: 1px solid var(--rule-strong);
 }
 
+.population-filter {
+  max-width: 760px;
+  margin: 0 0 28px;
+}
+
+.population-filter-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 12px 24px;
+  flex-wrap: wrap;
+}
+
+.population-filter-heading h3 {
+  color: var(--text-2);
+  font: 500 13.5px var(--sans);
+  margin: 0;
+}
+
+.population-filter-heading p {
+  color: var(--text-3);
+  font-size: 12px;
+  margin: 4px 0 0;
+}
+
+.population-filter-value {
+  color: var(--text-2);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.population-histogram {
+  display: block;
+  width: 100%;
+  height: 76px;
+  overflow: visible;
+  margin-top: 6px;
+}
+
+.population-bar {
+  fill: var(--text-3);
+  opacity: 0.4;
+}
+
+.population-excluded {
+  fill: var(--surface);
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.population-axis,
+.population-cutoff {
+  stroke: var(--rule-strong);
+  stroke-width: 1;
+}
+
+.population-cutoff {
+  stroke: var(--text-3);
+  stroke-dasharray: 2 3;
+}
+
+.population-tick {
+  fill: var(--text-3);
+  font: 11px var(--sans);
+}
+
+.population-sliders {
+  position: relative;
+  height: 28px;
+  margin: 0 -7px;
+}
+
+.population-slider-track {
+  position: absolute;
+  inset: 13px 7px auto;
+  height: 2px;
+  background: var(--rule);
+}
+
+.population-slider-track span {
+  position: absolute;
+  height: 100%;
+  background: var(--text-3);
+}
+
+.population-sliders input {
+  appearance: none;
+  position: absolute;
+  width: 100%;
+  height: 28px;
+  margin: 0;
+  background: transparent;
+  pointer-events: none;
+}
+
+.population-sliders input::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--surface);
+  border-radius: 50%;
+  background: var(--text-2);
+  cursor: ew-resize;
+  pointer-events: auto;
+}
+
+.population-sliders input::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--surface);
+  border-radius: 50%;
+  background: var(--text-2);
+  cursor: ew-resize;
+  pointer-events: auto;
+}
+
+.population-sliders input:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.population-filter-note {
+  color: var(--text-3);
+  font-size: 12px;
+  margin: 2px 0 0;
+}
+
 /* Segmented control */
 .segmented {
   display: inline-flex;

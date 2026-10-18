@@ -20,12 +20,14 @@ export function CountryTooltip({
   x,
   y,
   bounds,
+  children,
 }: {
   country: Country;
   rank?: number;
   x: number;
   y: number;
   bounds: number;
+  children?: ReactNode;
 }) {
   return (
     <Tooltip x={x} y={y} bounds={bounds}>
@@ -44,6 +46,7 @@ export function CountryTooltip({
       ) : (
         <p className="tooltip-note">Too few searches to measure reliably, so it has no rank.</p>
       )}
+      {children}
     </Tooltip>
   );
 }

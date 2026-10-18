@@ -2,12 +2,18 @@ import { extent } from "d3-array";
 import { scaleLog } from "d3-scale";
 import { useMemo, useState } from "react";
 import type { Country } from "../data";
-import { fmtTick, logTicks } from "../format";
+import { fmtMoney, fmtTick, logTicks } from "../format";
 import { useWidth, type Hover } from "../hooks";
 import { SERIES } from "../scales";
 import { CountryTooltip } from "./Tooltip";
 
-export type XMeasure = "population" | "gdp";
+export type XMeasure = "population" | "gdp" | "gdpPerCapita";
+
+const MEASURES = {
+  population: { label: "Population", axis: "Population →" },
+  gdp: { label: "GDP", axis: "GDP, current US$ →" },
+  gdpPerCapita: { label: "GDP per capita", axis: "GDP per capita, current US$ →" },
+};
 
 type Props = {
   countries: Country[];
@@ -43,7 +49,8 @@ export function Scatter({ countries, measure, ranks, picked, annotate, onSelect 
   const [hover, setHover] = useState<Hover<Country>>(null);
   const height = Math.min(540, Math.max(340, Math.round(width * 0.56)));
 
-  const xOf = (c: Country) => (measure === "population" ? c.population : c.gdp);
+  const xOf = (c: Country) => c[measure];
+  const { label, axis } = MEASURES[measure];
   const points = useMemo(
     () =>
       countries
@@ -96,13 +103,13 @@ export function Scatter({ countries, measure, ranks, picked, annotate, onSelect 
         onPointerLeave={() => setHover(null)}
         onClick={() => hover && onSelect(hover.item.iso3)}
         role="img"
-        aria-label={`Scatterplot of search interest against ${measure === "population" ? "population" : "GDP"}`}
+        aria-label={`Scatterplot of search interest against ${label}`}
       >
         {xTicks.map((t) => (
           <g key={`x${t}`}>
             <line className="grid" x1={x(t)} x2={x(t)} y1={M.top} y2={height - M.bottom} />
             <text className="tick" x={x(t)} y={height - M.bottom + 18} textAnchor="middle">
-              {measure === "gdp" ? `$${fmtTick(t)}` : fmtTick(t)}
+              {measure === "population" ? fmtTick(t) : `$${fmtTick(t)}`}
             </text>
           </g>
         ))}
@@ -115,7 +122,7 @@ export function Scatter({ countries, measure, ranks, picked, annotate, onSelect 
           </g>
         ))}
         <text className="axis-title" x={width - M.right} y={height - 6} textAnchor="end">
-          {measure === "population" ? "Population →" : "GDP, current US$ →"}
+          {axis}
         </text>
         <text className="axis-title" x={M.left} y={M.top - 4}>
           ↑ Search interest (France = 100)
@@ -151,12 +158,17 @@ export function Scatter({ countries, measure, ranks, picked, annotate, onSelect 
         {hover && <circle className="dot-hover" cx={hover.x} cy={hover.y} r={8} />}
       </svg>
       {hover && (
-        <CountryTooltip country={hover.item} rank={ranks.get(hover.item.iso3)} x={hover.x} y={hover.y} bounds={width} />
+        <CountryTooltip country={hover.item} rank={ranks.get(hover.item.iso3)} x={hover.x} y={hover.y} bounds={width}>
+          {measure === "gdpPerCapita" && (
+            <span>GDP per capita: {fmtMoney(hover.item.gdpPerCapita)} ({hover.item.raw.gdp_per_capita_usd_year})</span>
+          )}
+        </CountryTooltip>
       )}
       {fit && (
         <p className="chart-note">
-          The line is the simple trend across the countries shown. {measure === "population" ? "Population" : "GDP"}{" "}
-          alone accounts for {Math.round(fit.r2 * 100)}% of the variation in search interest on this log scale.
+          The fitted line captures {Math.round(fit.r2 * 100)}% of the variation in log search interest across the{" "}
+          {points.length} countries shown. It compares {label === "Population" ? "population" : label} alone with search
+          interest, without accounting for other country differences.
         </p>
       )}
     </div>

@@ -8,6 +8,7 @@ import { MonthlyChart, type MonthlyMode } from "./components/MonthlyChart";
 import { CountryPicker } from "./components/CountryPicker";
 import { RankedStrip } from "./components/RankedStrip";
 import { RankingsTable } from "./components/RankingsTable";
+import { PopulationFilter } from "./components/PopulationFilter";
 import { Scatter, type XMeasure } from "./components/Scatter";
 import { Segmented } from "./components/Segmented";
 import { ThemeToggle } from "./components/ThemeToggle";
@@ -32,6 +33,8 @@ export function App({ data }: { data: Snapshot }) {
   const [mode, setMode] = useState<MonthlyMode>("own");
   const [picked, setPicked] = useState<string[]>(["CZE", "FRA", "USA"]);
   const [focus, setFocus] = useState<string | null>(null);
+  const [populationRange, setPopulationRange] = useState<[number, number | null]>([0, null]);
+  const [minimumResidentsMillions, maximumResidentsMillions] = populationRange;
 
   const countries = useMemo(
     () => data.countries.filter((c) => extended || c.unMember),
@@ -43,8 +46,14 @@ export function App({ data }: { data: Snapshot }) {
   const expectedRanks = useMemo(() => rankBy(countries, (c) => c.vsExpected), [countries]);
   const eligible = countries.filter((c) => c.eligible && c.perMillion !== null);
   const byPerMillion = [...eligible].sort((a, b) => b.perMillion! - a.perMillion!);
-  const top = byPerMillion.slice(0, 20);
-  const bottom = byPerMillion.slice(-20).reverse();
+  const filteredByResidents = byPerMillion.filter(
+    (c) => c.population !== null
+      && c.population / 1_000_000 >= minimumResidentsMillions
+      && (maximumResidentsMillions === null || c.population / 1_000_000 <= maximumResidentsMillions),
+  );
+  const rankingRanks = rankBy(filteredByResidents, (c) => c.perMillion);
+  const top = filteredByResidents.slice(0, 20);
+  const bottom = filteredByResidents.slice(-20).reverse();
   const modelled = eligible.filter((c) => c.vsExpected !== null).sort((a, b) => b.vsExpected! - a.vsExpected!);
   const above = modelled.slice(0, 12);
   const below = modelled.slice(-12).reverse();
@@ -52,9 +61,10 @@ export function App({ data }: { data: Snapshot }) {
   const regions = [...new Set(countries.map((c) => c.region))].sort();
 
   const leader = byPerMillion[0];
+  const leastSearched = byPerMillion[byPerMillion.length - 1];
   const france = data.byIso.get(provenance.anchor_iso3)!;
   const focusCountry = (focus && inView.get(focus)) || leader;
-  const bottomAfrica = bottom.filter((c) => c.region === "Sub-Saharan Africa").length;
+  const bottomAfrica = byPerMillion.slice(-20).filter((c) => c.region === "Sub-Saharan Africa").length;
 
   useEffect(() => {
     // The page renders after the data arrives, so jump to a linked section once it exists.
@@ -138,8 +148,8 @@ export function App({ data }: { data: Snapshot }) {
             </div>
             <div>
               <dt>Least searched for per resident</dt>
-              <dd className="stat-big">{bottom[0].country}</dd>
-              <dd className="stat-note">{fmtIndex(bottom[0].perMillion)} per million residents</dd>
+              <dd className="stat-big">{leastSearched.country}</dd>
+              <dd className="stat-note">{fmtIndex(leastSearched.perMillion)} per million residents</dd>
             </div>
             <div>
               <dt>Model fit on log search interest</dt>
@@ -222,32 +232,44 @@ export function App({ data }: { data: Snapshot }) {
               </p>
             </div>
           </div>
-          <div className="two-col">
-            <div>
-              <h3>Top 20</h3>
-              <RankedStrip
-                rows={top}
-                value={(c) => c.perMillion!}
-                domain={[bottom[0].perMillion! * 0.8, top[0].perMillion! * 1.2]}
-                ranks={ranks}
-                format={(v) => fmtIndex(v)}
-                focus={focusCountry.iso3}
-                onSelect={select}
-              />
+          <PopulationFilter
+            countries={eligible}
+            minimumMillions={minimumResidentsMillions}
+            maximumMillions={maximumResidentsMillions}
+            onChange={(minimum, maximum) => setPopulationRange([minimum, maximum])}
+          />
+          {filteredByResidents.length ? (
+            <div className="two-col">
+              <div>
+                <h3>Top {top.length}</h3>
+                <RankedStrip
+                  rows={top}
+                  value={(c) => c.perMillion!}
+                  domain={[bottom[0].perMillion! * 0.8, top[0].perMillion! * 1.2]}
+                  ranks={rankingRanks}
+                  format={(v) => fmtIndex(v)}
+                  focus={focusCountry.iso3}
+                  onSelect={select}
+                />
+              </div>
+              <div>
+                <h3>Bottom {bottom.length}</h3>
+                <RankedStrip
+                  rows={bottom}
+                  value={(c) => c.perMillion!}
+                  domain={[bottom[0].perMillion! * 0.8, top[0].perMillion! * 1.2]}
+                  ranks={rankingRanks}
+                  format={(v) => fmtIndex(v)}
+                  focus={focusCountry.iso3}
+                  onSelect={select}
+                />
+              </div>
             </div>
-            <div>
-              <h3>Bottom 20</h3>
-              <RankedStrip
-                rows={bottom}
-                value={(c) => c.perMillion!}
-                domain={[bottom[0].perMillion! * 0.8, top[0].perMillion! * 1.2]}
-                ranks={ranks}
-                format={(v) => fmtIndex(v)}
-                focus={focusCountry.iso3}
-                onSelect={select}
-              />
-            </div>
-          </div>
+          ) : (
+            <p className="empty" role="status">
+              No ranked countries fall within this population range. Widen the range to see results.
+            </p>
+          )}
           <p className="footnote">
             Index per million residents. Countries whose exported scores fail the precision rule are left out rather than
             placed at the bottom, so this is the bottom of the measured list, not necessarily of the world.
@@ -257,10 +279,11 @@ export function App({ data }: { data: Snapshot }) {
         <section id="size" className="section">
           <div className="section-head">
             <div>
-              <h2>Bigger, richer countries get searched for more</h2>
+              <h2>Population, prosperity and search interest</h2>
               <p className="lede">
-                Total search interest rises steadily with a country&apos;s size. Each dot is a country; both axes use a
-                logarithmic scale. Hover for details, or click a dot to show it on the map card.
+                Larger countries tend to attract more total search interest. Among countries with similar populations,
+                higher GDP per person is also associated with more interest. Total GDP combines population size and
+                economic output per person.
               </p>
             </div>
             <Segmented
@@ -269,9 +292,19 @@ export function App({ data }: { data: Snapshot }) {
               options={[
                 { value: "population", label: "By population" },
                 { value: "gdp", label: "By GDP" },
+                { value: "gdpPerCapita", label: "By GDP per capita" },
               ]}
             />
           </div>
+          <p className="chart-note">
+            {measure === "population"
+              ? "This chart compares population with total search interest, without accounting for GDP per person. "
+              : measure === "gdp"
+                ? "A large economy can reflect more people, more output per person, or both. A high total GDP does not necessarily mean a high GDP per person. "
+                : "GDP per person alone has a weaker relationship with total search interest. That does not mean prosperity is unimportant: countries in this chart still differ in population. "}
+            Each dot is a country; both axes use a logarithmic scale. Hover for details, or click a dot to show it on the
+            map card.
+          </p>
           <Scatter
             countries={countries}
             measure={measure}
@@ -280,6 +313,18 @@ export function App({ data }: { data: Snapshot }) {
             annotate={annotate}
             onSelect={select}
           />
+          <p className="footnote">
+            In the full {regression.n}-country model, twice the GDP per person is associated with about{" "}
+            {fmtTimes(2 ** regression.coefficients.gdp_usd)} the predicted interest at the same population.
+            This describes an association, not a cause.
+          </p>
+          {measure === "gdpPerCapita" && (
+            <p className="footnote">
+              GDP per capita is economic output per person, not personal income. Values are the latest available
+              World Bank observations in current US dollars, not adjusted for differences in purchasing power.
+              Countries without a positive value are omitted. Hover to see each value and its year.
+            </p>
+          )}
         </section>
 
         <section id="surprises" className="section">
@@ -287,9 +332,9 @@ export function App({ data }: { data: Snapshot }) {
             <div>
               <h2>Searched for more, or less, than expected</h2>
               <p className="lede">
-                The fitted model estimates search interest from population and GDP. These
-                countries are furthest from that prediction. A value of 3× means three times the predicted interest. The
-                model can describe the gap, but not explain what causes it.
+                The prediction accounts for both population and economic output per person. These countries are
+                furthest from that prediction. A value of 3× means three times the predicted interest. The model
+                describes the gap but cannot explain its cause.
               </p>
             </div>
           </div>
@@ -324,7 +369,8 @@ export function App({ data }: { data: Snapshot }) {
             </div>
           </div>
           <p className="footnote">
-            The prediction uses {regression.n} countries, each with population and GDP from its latest common recent year.
+            The calculation uses population and total GDP, which together account for population size and GDP per
+            person. Its {regression.n} countries each have population and GDP from their latest common recent year.
             These model inputs can be older than the population used for the per-resident index. Countries without a
             suitable pair, including Taiwan and the Holy See, are not part of the model.
           </p>
